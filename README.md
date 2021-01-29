@@ -1,7 +1,7 @@
 # SOEN341-W21-A7
 SOEN341 Group A7 Project
 
-1. Members
+##1. Members
 * Maxime Giroux 40157483
 * Mahery Ranaivoarison	40005568
 * Rohit Vaidya	40096788
@@ -10,5 +10,5 @@ SOEN341 Group A7 Project
 * CSman22 - Jackey Weng	40130001
 * HalloweenTown - James Mariotti-Lapointe	26413080
 
-2. What languages & techniques do you plan to use (if haven't decided, then write sth like TBD)
+##2. What languages & techniques do you plan to use.
 TBD
