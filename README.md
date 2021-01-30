@@ -6,7 +6,7 @@ Name | Github Account
 ------------ | ------------- 
 Maxime Giroux | giroux2000
 Mahery Ranaivoarison | MahHairy
-Rohit Vaidya | 
+Rohit Vaidya | r-vaidya
 Jun Yi Loy | j-loy
 Zhuoyan Li | parker-1212
 Jackey Weng | CSman22 
