@@ -2,15 +2,15 @@
 SOEN341 Group A7 Project
 
 ## 1. Members
-Name | Github Account| Student ID
------------- | ------------- | -------------
-Maxime Giroux | giroux2000 | 40157483
-Mahery Ranaivoarison | | 40005568
-Rohit Vaidya | | 	40096788
-Jun Yi Loy | | 	40055219
-Zhuoyan Li | | 	40061140
-Jackey Weng | CSman22 |	40130001
-James Mariotti-Lapointe | HalloweenTown | 26413080
+Name | Github Account
+------------ | ------------- 
+Maxime Giroux | giroux2000
+Mahery Ranaivoarison | MahHairy
+Rohit Vaidya | 
+Jun Yi Loy | j-loy
+Zhuoyan Li | parker-1212
+Jackey Weng | CSman22 
+James Mariotti-Lapointe | HalloweenTown 
 
 ## 2. What languages & techniques do you plan to use.
 TBD
