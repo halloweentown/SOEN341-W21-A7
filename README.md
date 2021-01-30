@@ -4,7 +4,7 @@ SOEN341 Group A7 Project
 ## 1. Members
 Name | Github Account| Student ID
 ------------ | ------------- | -------------
-Maxime Giroux | | 40157483
+Maxime Giroux | giroux2000 | 40157483
 Mahery Ranaivoarison | | 40005568
 Rohit Vaidya | | 	40096788
 Jun Yi Loy | | 	40055219
