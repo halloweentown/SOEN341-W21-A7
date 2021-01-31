@@ -43,3 +43,9 @@ James Mariotti-Lapointe | HalloweenTown
     - [Deployment Diagram](https://tallyfy.com/uml-diagram/#deployment-diagram)
     - [Package Diagram](https://tallyfy.com/uml-diagram/#package-diagram) (Represents deployment diagrams as black boxes to depict high level interactions.)
     - [~~Profile Diagram~~](https://tallyfy.com/uml-diagram/#profile-diagram)
+
+## 3. Features
+### **Core Features**
+- Allow user to post a picture with text description
+- Allow user to following another user
+- Allow user to leave a comment for a picture that was posted
