@@ -46,6 +46,6 @@ James Mariotti-Lapointe | HalloweenTown
 
 ## 3. Features
 ### **Core Features**
-- Allow user to post a picture with text description
-- Allow user to following another user
-- Allow user to leave a comment for a picture that was posted
+- Allow users to post a picture with text description
+- Allow users to follow another user
+- Allow users to leave a comment for a picture that was posted
