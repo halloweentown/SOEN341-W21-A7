@@ -26,8 +26,8 @@ Since Social Media has now become a distinct part of our lives, this project inc
 - Laravel, Javascript, Php,or python, (Firebase?), MySQL, SQL
 
 ### **UI design**
-- Wire frame tools
-- TBD
+- Mockplus chosen for Wireframe.
+- Wire Frame prototype publish [here](http://run.mockplus.com/J14EA8NbBWmZRcTN/index.html)
 
 ### **Implementation Design**
 - UML Diagrams via [diagrams.net](https://app.diagrams.net/) (formerly Draw.io) and/or Visio
