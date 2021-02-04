@@ -12,10 +12,13 @@ Zhuoyan Li | parker-1212
 Jackey Weng | CSman22 
 James Mariotti-Lapointe | HalloweenTown 
 
-## 2.Description of the Project 
+## 2. Objective
+Create a web application to be able to share pictures with others.
+
+## 3.Description of the Project 
 Since Social Media has now become a distinct part of our lives, this project includes the development of a web application which is similar to the pre-existing social media platform "Instagram". The main features of this application is going to be the ability of the users to post pictures, leave comments on these pictures and follow other users on the application as well.
 
-## 3. Languages & Techniques Used (Planned)
+## 4. Languages & Techniques Used (Planned)
 ### **Front End**
 - CSS, HTML, Javascript (React Native)
 
@@ -47,7 +50,7 @@ Since Social Media has now become a distinct part of our lives, this project inc
     - [Package Diagram](https://tallyfy.com/uml-diagram/#package-diagram) (Represents deployment diagrams as black boxes to depict high level interactions.)
     - [~~Profile Diagram~~](https://tallyfy.com/uml-diagram/#profile-diagram)
 
-## 3. Features
+## 5. Features
 ### **Core Features**
 - Allow users to post a picture with text description
 - Allow users to follow another user
