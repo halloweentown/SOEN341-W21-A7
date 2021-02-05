@@ -29,7 +29,7 @@ assignees: ''
 - [ ] ()
 <!-- (If a task is large/complex enough, an issue can be created and hyperlinked in the list above) -->
 
-##**Priority**
+## **Priority**
 - [ ] High 
 - [ ] Medium 
 - [ ] Low 
