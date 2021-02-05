@@ -29,6 +29,11 @@ assignees: ''
 - [ ] ()
 <!-- (If a task is large/complex enough, an issue can be created and hyperlinked in the list above) -->
 
+##**Priority**
+- [ ] High 
+- [ ] Medium 
+- [ ] Low 
+
 ### **Acceptance Criteria**
 Card can be marked as 'Done' when the following have been completed:
 - [ ] Unit tests and test procedures have all been passed and documented
@@ -38,4 +43,4 @@ Card can be marked as 'Done' when the following have been completed:
 
 ---
 new tasks added ##MM-DD
-- [] 1
+- [ ] 1
