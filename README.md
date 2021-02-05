@@ -28,10 +28,18 @@ Since Social Media has now become a distinct part of our lives, this project inc
 
 ## 5. Languages & Techniques Used (Planned)
 ### **Front End**
-- CSS, HTML, Javascript (React Native)
+- CSS
+- HTML
+- Javascript (React Native)
 
 ### **Back End**
-- Laravel, Javascript, Php,or python, (Firebase?), MySQL, SQL
+- Laravel
+- Javascript
+- PHP
+- Python
+- Firebase (?)
+- MySQL
+- SQL
 
 ### **UI design**
 - Mockplus chosen for Wireframe.
