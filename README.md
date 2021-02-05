@@ -13,10 +13,10 @@ Jackey Weng | CSman22
 James Mariotti-Lapointe | HalloweenTown 
 
 ## 2. Objective
-Create a web application to be able to share pictures with others.
+The objective is to create a web application to allow users to express themsleves through the use of sharing photos.
 
 ## 3.Description of the Project 
-Since Social Media has now become a distinct part of our lives, this project includes the development of a web application which is similar to the pre-existing social media platform "Instagram". The main features of this application is going to be the ability of the users to post pictures, leave comments on these pictures and follow other users on the application as well.
+Since Social Media has now become a distinct part of our lives, this project includes the development of a web application which is similar to the pre-existing social media platform "Instagram". This web application allow users to come together and form communities through the premise of sharing photos. This is done by allowing people to have their own profile page specified to them to post images. This page can be seen by other users, in which they can follow and comment on specific post/shared picture.  
 
 ## 4. Languages & Techniques Used (Planned)
 ### **Front End**
