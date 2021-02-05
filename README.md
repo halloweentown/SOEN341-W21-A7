@@ -55,3 +55,22 @@ Since Social Media has now become a distinct part of our lives, this project inc
 - Allow users to post a picture with text description
 - Allow users to follow another user
 - Allow users to leave a comment for a picture that was posted
+
+## 6. Style Guides 
+### Git Commits
+Git Commits:
+- 🅕 (:regional_indicator_f): Front End code
+- 🅑(regional_indicator_b): Back End code 
+- 💡(:bulb): New feature added 
+- 🔨(:hammer): Cleaning code
+- ⬆️(:arrow_down): Old feature removed
+- ⬇️(:arrow_up): Old feature replaced
+- 🐛(:bug): Bug fix
+- 📱(:mobile_phone): Smartphone compatibility
+
+### Laravel Style Guide
+https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
+
+### ReactJS Style Guide
+https://github.com/airbnb/javascript/tree/master/react
+
