@@ -16,7 +16,7 @@ assignees: ''
 - [ ] 2
 - [ ] 3
 
-### **Non-Functional Requirments / Specifications**
+### **Specifications**
 <!-- Quantitative PASS/FAIL performance metrics that must be met by the implementation. -->
 - [ ] 1 <!-- Example: Page must load within 30 seconds -->
 - [ ] 2
@@ -29,7 +29,7 @@ assignees: ''
 - [ ] ()
 <!-- (If a task is large/complex enough, an issue can be created and hyperlinked in the list above) -->
 
-## **Priority**
+##**Priority**
 - [ ] High 
 - [ ] Medium 
 - [ ] Low 
