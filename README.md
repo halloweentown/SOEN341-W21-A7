@@ -1,6 +1,5 @@
 # SOEN341-W21 Group A7 Project
 
-
 ## 1. Members
 Name | Github Account
 ------------ | ------------- 
@@ -15,10 +14,19 @@ James Mariotti-Lapointe | HalloweenTown
 ## 2. Objective
 The objective is to create a web application to allow users to express themsleves through the use of sharing photos.
 
+
 ## 3.Description of the Project 
 Since Social Media has now become a distinct part of our lives, this project includes the development of a web application which is similar to the pre-existing social media platform "Instagram". This web application allow users to come together and form communities through the premise of sharing photos. This is done by allowing people to have their own profile page specified to them to post images. This page can be seen by other users, in which they can follow and comment on specific post/shared picture.  
 
-## 4. Languages & Techniques Used (Planned)
+
+## 4. Features
+### **Core Features**
+- Allow users to post a picture with text description
+- Allow users to follow another user
+- Allow users to leave a comment for a picture that was posted
+
+
+## 5. Languages & Techniques Used (Planned)
 ### **Front End**
 - CSS, HTML, Javascript (React Native)
 
@@ -50,11 +58,6 @@ Since Social Media has now become a distinct part of our lives, this project inc
     - [Package Diagram](https://tallyfy.com/uml-diagram/#package-diagram) (Represents deployment diagrams as black boxes to depict high level interactions.)
     - [~~Profile Diagram~~](https://tallyfy.com/uml-diagram/#profile-diagram)
 
-## 5. Features
-### **Core Features**
-- Allow users to post a picture with text description
-- Allow users to follow another user
-- Allow users to leave a comment for a picture that was posted
 
 ## 6. Style Guides 
 ### Git Commits
