@@ -18,7 +18,7 @@ class App extends React.Component {
 					'Content-Type': 'application/json',
 				}	
 			});
-		
+		//TODO hookup backend
 			let result = await res.json();
 
 			if (result && result.success){
