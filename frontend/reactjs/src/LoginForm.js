@@ -77,7 +77,9 @@ class LoginForm extends React.Component {
     render(){
         return (
             <div className="loginForm">
-                Fakestagram
+                <div className="logoFont">
+                    Fakestagram
+                </div>
                 <InputField
                     type='text'
                     placeholder='Username'
@@ -96,7 +98,6 @@ class LoginForm extends React.Component {
 						disabled = {this.state.buttonDisabled}
 						onClick  = { () => this.doLogin() }
 					/>
-
             </div>
         );
     }
