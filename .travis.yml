@@ -14,9 +14,6 @@ before_script:
   - npm install --global gulp-cli
   - npm install
   - gulp --production
-
-before_install:
-  - mysql -e 'CREATE DATABASE travis;'
   
 script:
   - phpdbg -qrr vendor/bin/phpunit --coverage-clover=coverage.xml
