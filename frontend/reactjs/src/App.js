@@ -32,7 +32,7 @@ class App extends React.Component {
 
 		}catch(e){
 			UserStore.loading = false;
-			UserStore.isLoggedIn = false;
+UserStore.isLoggedIn = false;
 		}
 	}
 
