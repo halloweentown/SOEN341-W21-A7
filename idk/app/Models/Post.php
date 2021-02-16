@@ -9,4 +9,8 @@ class Post extends Model
 {
     protected $table = 'posts';
     protected $fillable = ['caption', 'image']; //add user_id for username once it's actually required
+
+    function user(){
+        return $this->belongsTo('App\User');
+    }
 }

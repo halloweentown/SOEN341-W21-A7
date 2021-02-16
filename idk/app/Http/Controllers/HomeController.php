@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Post;
+use Auth;
 
 class HomeController extends Controller
 {
@@ -26,19 +27,23 @@ class HomeController extends Controller
 
     public function index()
     {
-       $posts = DB::table('posts')->where('user_id', 1)->get();
+        /*
+        after linking posts to user accounts, use this below $posts = Auth::user()->posts;
+        */
+       $posts = Auth::user();
 
-
+        
         return view('home', [
             'posts' => $posts
         ]);
+        
     }
 
     public function store(Request $request)
     {
         $post = new post();
 
-        $post->user_id = '1'; 
+        $post->name = Auth::user()->name; 
         /*default set to 1 because I didn't know how to pull the user's username, don't really need the users
         username right now and it's a hassle to figure it out so...
         */
