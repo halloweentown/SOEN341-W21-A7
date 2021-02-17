@@ -27,8 +27,6 @@ Route::post('/upload', function(Request $request){
     return 'Uploaded!';
 });
 
-Route::post('/comment', 'App\Http\Controllers\HomeController@save');
-
 Route::post('/home', 'App\Http\Controllers\HomeController@store')->name('home');
 
 Auth::routes();
