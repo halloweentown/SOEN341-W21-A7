@@ -2,7 +2,7 @@ import './App.css';
 import React 		from "react";
 import { observer } from 'mobx-react' 
 import UserStore 	from './stores/UserStore';
-import LoginForm	from './LoginForm';
+import LoginForm	from './pages/LoginForm';
 import SubmitButton	from './SubmitButton';
 
 class App extends React.Component {
