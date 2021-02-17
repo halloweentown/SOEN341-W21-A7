@@ -1,9 +1,13 @@
-import './App.css';
-import React 		from "react";
+import AppStyle from './style/App.css';
+import React 		from 'react';
 import { observer } from 'mobx-react' 
 import UserStore 	from './stores/UserStore';
 import LoginForm	from './pages/LoginForm';
 import SubmitButton	from './SubmitButton';
+import UserPage from './pages/UserPage';
+import Post	from './components/Post';
+
+
 
 class App extends React.Component {
 
@@ -94,11 +98,16 @@ UserStore.isLoggedIn = false;
 
 		return (
 			<div className="app">
-				<div className="container">
-					<LoginForm />		
-				</div>
 
+{/* 				<div className="container"> */}
+{/* 					<LoginForm />	 */}
+				{/* Header */}
+				{/* Post */}
+				{/* Post */}
+{/* 				</div>  */}
+				<UserPage />
 			</div>
+			
  		);
  	}
 }
