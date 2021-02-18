@@ -101,9 +101,6 @@ UserStore.isLoggedIn = false;
 
 {/* 				<div className="container"> 
 				<LoginForm />	
-				{/* Header */}
-				{/* Post */}
-				{/* Post */}
  				{/*</div>  */} 
  				<UserPage /> 
 			</div>
