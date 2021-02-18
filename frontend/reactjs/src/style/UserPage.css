@@ -1,11 +1,6 @@
 .userpage__headerImage {
     object-fit: contain;
     width: 5%;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-family: 'Grand Hotel', cursive;
-    padding-left: 95px;
-    font-size: 40px;
     background-color: white;
     border-bottom: 1px solid #565656;
     border-right: 1px solid #565656;
@@ -21,6 +16,7 @@
 }
 
 .userpage__profile {
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
