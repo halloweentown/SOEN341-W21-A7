@@ -4,6 +4,7 @@ import '../style/App.css';
 import Post	                from '../components/Post';
 import Profile              from '../components/Profile';
 import fakestagram          from '../image/fakestagram_logo.jpg'
+import {Link} from 'react-router-dom'
 
 function UserPage() {
 
@@ -34,7 +35,7 @@ function UserPage() {
                     src = "https://www.transparentpng.com/thumb/logo-instagram/EvWlA1-logo-instagram-transparent-picture.png"
                  /> */}
                 <div className="userpage__logoFont">
-                    <a href= "#">Fakestagram</a>
+                    <li><Link to="/">Fakestagram</Link></li>
                 </div>
             </div>
             <div className = "userpage__profile">
