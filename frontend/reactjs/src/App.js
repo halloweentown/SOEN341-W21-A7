@@ -6,11 +6,11 @@ import LoginForm	from './pages/LoginForm';
 import SubmitButton	from './SubmitButton';
 import UserPage from './pages/UserPage';
 import Post	from './components/Post';
-import {Route, Link} from "react-router-dom"
+
 
 
 class App extends React.Component {
-	
+
 	async componentDidMount(){
 
 		try{
@@ -99,16 +99,13 @@ UserStore.isLoggedIn = false;
 		return (
 			<div className="app">
 				<div className="container"> 
-				{/* <LoginForm />	 */}
-					<Route exact path="pages/LoginForm" Component = {LoginForm}/>
+				<LoginForm />	
  				</div>   
   				<UserPage />  
 			</div>
 			
  		);
  	}
-
-
 }
 
 export default observer(App);
