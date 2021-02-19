@@ -35,7 +35,11 @@ function UserPage() {
                     src = "https://www.transparentpng.com/thumb/logo-instagram/EvWlA1-logo-instagram-transparent-picture.png"
                  /> */}
                 <div className="userpage__logoFont">
+<<<<<<< HEAD
                     <li><Link to="/">Fakestagram</Link></li>
+=======
+                    Fakestagram
+>>>>>>> parent of 323b6fb (moved some code around)
                 </div>
             </div>
             <div className = "userpage__profile">
