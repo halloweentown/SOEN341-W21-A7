@@ -25,14 +25,14 @@
 
 .userpage__logoFont {
     background-color: white;
-    font-weight: bold;
-    font-family: 'Grand Hotel', cursive;
     border-bottom: 1px solid lightgrey;
     padding: 10px;
-    font-size: 30px;
 }
 
 .userpage__logoFont a{
     text-decoration: none;
     color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Grand Hotel', cursive;
 }
