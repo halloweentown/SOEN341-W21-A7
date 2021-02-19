@@ -98,11 +98,10 @@ UserStore.isLoggedIn = false;
 
 		return (
 			<div className="app">
-
-{/* 				<div className="container"> 
+ 				<div className="container"> 
 				<LoginForm />	
- 				{/*</div>  */} 
- 				<UserPage /> 
+ 				</div>  
+{/*  				<UserPage />  */}
 			</div>
 			
  		);
