@@ -33,7 +33,7 @@ function UserPage() {
                     className ="userpage__headerImage" 
                     src = "https://www.transparentpng.com/thumb/logo-instagram/EvWlA1-logo-instagram-transparent-picture.png"
                  /> */}
-                <div className="logoFont">
+                <div className="userpage__logoFont">
                     Fakestagram
                 </div>
             </div>
