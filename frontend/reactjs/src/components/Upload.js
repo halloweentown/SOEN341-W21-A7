@@ -60,7 +60,7 @@ export default function Upload({username}) {
                         <input type="text" placeholder='Enter a caption...' onChange={event => setCaption(event.target.value)} value={caption}/>
                         <input type="file" onChange={handleChange}/>
                     </div>
-                    <input type="button" value="Upload" id = "cta-btn" onClick ={handleUpload}></input>
+                    <input type="button" value="Upload Post" id = "cta-btn" onClick ={handleUpload}></input>
                     <div className = "upload__image">
                         
                         {/* <Button onClick ={handleUpload}>
