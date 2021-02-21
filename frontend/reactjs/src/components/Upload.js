@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
-import Modal from './Modal'
-import './style/Upload.css';
+import React, {useState} from 'react'
+import '../style/Upload.css';
 import Button from '@material-ui/core/Button';
 
-export default function Upload({username}) {
+function ImageUpload({username}) {
+
     const [caption, setCaption] = useState('');
     const [progress, setProgress] = useState(0);
     const [image, setImage] = useState(null);
@@ -46,25 +46,19 @@ export default function Upload({username}) {
             }
         ) */
     }
-  const [isOpen, setIsOpen] = useState(false)
-  return (
-    <>
-      <div className ="upload__button" onClick={() => console.log('clicked')}>
-        <button onClick={() => setIsOpen(true)}>Upload</button>
 
-        <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-            <div className = "upload">
-                <input type="text" placeholder='Enter a caption...' onChange={event => setCaption(event.target.value)} value={caption}/>
-                <div>
-                <input type="file" onChange={handleChange}/>
-                <Button onClick ={handleUpload}>
-                    Upload
-                </Button>
-            </div>
-            </div>
-        </Modal>
-      </div>
 
-    </>
-  )
+    return (
+        <div className = "upload">
+            <input type="text" placeholder='Enter a caption...' onChange={event => setCaption(event.target.value)} value={caption}/>
+            <div>
+            <input type="file" onChange={handleChange}/>
+            <Button onClick ={handleUpload}>
+                Upload
+            </Button>
+            </div>
+        </div>
+    )
 }
+
+export default ImageUpload
