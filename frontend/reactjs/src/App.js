@@ -99,10 +99,8 @@ UserStore.isLoggedIn = false;
 		return (
 			<div className="app">
 				<div className="container"> 
-
 				<Route exact path ="/Login" component = {LoginForm}></Route>
 				 </div>
-
 				 <Route exact path ="/" component = {UserPage}></Route> 
 			</div>
 			
