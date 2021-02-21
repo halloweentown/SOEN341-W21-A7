@@ -96,10 +96,29 @@ UserStore.isLoggedIn = false;
 			}
 		}
 
+		const BUTTON_WRAPPER_STYLES ={
+			position: 'relative',
+			zIndex: 1
+		}
+		const OTHER_CONTENT_STYLES={
+			position: 'relative',
+			zIndex: 2,
+			backgroundColer: 'red',
+			padding: '10px'
+		}
+
 		return (
 			<div className="app">
+
 				<div className="container"> 
 				<Route exact path ="/Login" component = {LoginForm}></Route>
+				<div style ={BUTTON_WRAPPER_STYLES}>
+					<button>Open Modal</button>
+					<Modal>
+						Fancy Modal
+					</Modal>
+				</div>
+				<div style = {OTHER_CONTENT_STYLES}>Upload</div>
 				 </div>
 				 <Route exact path ="/" component = {UserPage}></Route> 
 			</div>
