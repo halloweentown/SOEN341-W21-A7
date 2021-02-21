@@ -6,6 +6,7 @@ import LoginForm	from './pages/LoginForm';
 import SubmitButton	from './SubmitButton';
 import UserPage from './pages/UserPage';
 import Post	from './components/Post';
+import {Route, Link} from 'react-router-dom'; 
 
 
 
@@ -99,9 +100,11 @@ UserStore.isLoggedIn = false;
 		return (
 			<div className="app">
 				<div className="container"> 
-				<LoginForm />	
- 				</div>   
-  				<UserPage />  
+				{/* <LoginForm />	 */}
+				<Route exact path ="/Login" component = {LoginForm}></Route>
+				 </div>
+
+				 <Route exact path ="/" component = {UserPage}></Route> 
 			</div>
 			
  		);
