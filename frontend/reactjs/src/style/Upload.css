@@ -3,9 +3,3 @@
     border: 1px solid lightgrey;
     width: fit-content;
 }
-
-.upload__button button {
-    position: "relative";
-    z-index: 1;
-    background-color: grey;
-}

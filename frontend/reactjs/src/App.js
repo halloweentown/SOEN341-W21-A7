@@ -6,9 +6,8 @@ import LoginForm	from './pages/LoginForm';
 import SubmitButton	from './SubmitButton';
 import UserPage from './pages/UserPage';
 import Post	from './components/Post';
-import Upload from './Upload';
 import {Route, Link} from 'react-router-dom'; 
-import Modal from'./Modal'
+
 
 class App extends React.Component {
 
@@ -97,24 +96,11 @@ UserStore.isLoggedIn = false;
 			}
 		}
 
-		const BUTTON_WRAPPER_STYLES ={
-			position: 'relative',
-			zIndex: 1
-		}
-		const OTHER_CONTENT_STYLES={
-			position: 'relative',
-			zIndex: 2,
-			backgroundColer: 'red',
-			padding: '10px'
-		}
-
 		return (
 			<div className="app">
-
 				<div className="container"> 
 				<Route exact path ="/Login" component = {LoginForm}></Route>
 				 </div>
-				 
 				 <Route exact path ="/" component = {UserPage}></Route> 
 			</div>
 			
