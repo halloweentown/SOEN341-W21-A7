@@ -4,7 +4,7 @@ import '../style/App.css';
 import Post	                from '../components/Post';
 import Profile              from '../components/Profile';
 import fakestagram          from '../image/fakestagram_logo.jpg'
-import Upload              from '../components/Upload';
+import ImageUpload              from '../components/ImageUpload';
 
 function UserPage() {
 
@@ -30,7 +30,6 @@ function UserPage() {
     return (
         <div className="userpage">
             <div className="userpage__header">
-                <Upload />
 {/*                 <img
                     className ="userpage__headerImage" 
                     src = "https://www.transparentpng.com/thumb/logo-instagram/EvWlA1-logo-instagram-transparent-picture.png"

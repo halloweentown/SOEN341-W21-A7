@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import '../style/Upload.css';
+import '../style/ImageUpload.css';
 import Button from '@material-ui/core/Button';
 
 function ImageUpload({username}) {
@@ -49,7 +49,7 @@ function ImageUpload({username}) {
 
 
     return (
-        <div className = "upload">
+        <div className = "imageupload">
             <input type="text" placeholder='Enter a caption...' onChange={event => setCaption(event.target.value)} value={caption}/>
             <div>
             <input type="file" onChange={handleChange}/>
