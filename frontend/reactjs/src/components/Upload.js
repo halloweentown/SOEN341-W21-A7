@@ -53,14 +53,22 @@ export default function Upload({username}) {
         <button onClick={() => setIsOpen(true)}>Upload</button>
 
         <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-            <div className = "upload">
-                <input type="text" placeholder='Enter a caption...' onChange={event => setCaption(event.target.value)} value={caption}/>
-                <div>
-                <input type="file" onChange={handleChange}/>
-                <Button onClick ={handleUpload}>
-                    Upload
-                </Button>
-            </div>
+            <div className = "upload__post">
+                <form action="">
+                    <div className ="caption">
+                        <label for="caption">Enter the caption</label>
+                        <input type="text" placeholder='Enter a caption...' onChange={event => setCaption(event.target.value)} value={caption}/>
+                        <input type="file" onChange={handleChange}/>
+                    </div>
+                    <input type="button" value="Upload" id = "cta-btn" onClick ={handleUpload}></input>
+                    <div className = "upload__image">
+                        
+                        {/* <Button onClick ={handleUpload}>
+                         Upload
+                        </Button> */}
+                    </div>
+                    
+                </form>
             </div>
         </Modal>
       </div>

@@ -30,6 +30,7 @@ function UserPage() {
     return (
         <div className="userpage">
             <div className="userpage__header">
+                <Upload />
 {/*                 <img
                     className ="userpage__headerImage" 
                     src = "https://www.transparentpng.com/thumb/logo-instagram/EvWlA1-logo-instagram-transparent-picture.png"
@@ -37,7 +38,10 @@ function UserPage() {
                 <div className="userpage__logo">
                     <a href= "/">Fakestagram</a>    
                 </div>
-                <Upload/>
+                <div className = "userpage__upload">
+                    <Upload/>
+                </div>
+                
                 <a href= "/Login">Log Out</a>    
             </div>
             <div className = "userpage__profile">
