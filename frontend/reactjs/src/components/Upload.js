@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Modal from './Modal'
-import './style/Upload.css';
+import Modal from '../Modal'
+import '../style/Upload.css';
 import Button from '@material-ui/core/Button';
 
 export default function Upload({username}) {
