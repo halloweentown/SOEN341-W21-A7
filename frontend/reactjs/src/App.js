@@ -6,7 +6,7 @@ import LoginForm	from './pages/LoginForm';
 import SubmitButton	from './SubmitButton';
 import UserPage from './pages/UserPage';
 import Post	from './components/Post';
-import Upload from './Upload';
+import Upload from './components/Upload';
 import {Route, Link} from 'react-router-dom'; 
 import Modal from'./Modal'
 
