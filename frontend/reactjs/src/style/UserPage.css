@@ -1,10 +1,5 @@
-.userpage__headerImage {
-    object-fit: contain;
-    width: 5%;
-    background-color: white;
-    border-bottom: 1px solid #565656;
-    border-right: 1px solid #565656;
-    padding: 20px;
+.userpage{
+    background-color:#fafafa;
 }
 
 .userpage__post {
@@ -23,16 +18,26 @@
     justify-content: center;
 }
 
-.userpage__logoFont {
+.userpage__header {
     background-color: white;
     border-bottom: 1px solid lightgrey;
     padding: 10px;
-}
+} 
 
-.userpage__logoFont a{
+.userpage__logo a{
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 30px;
     font-weight: bold;
     font-family: 'Grand Hotel', cursive;
 }
+
+.userpage__logo a:active{
+    color: gray;
+}
+
+.userpage__header a{
+    text-decoration: none;
+    color: black;
+}
+
