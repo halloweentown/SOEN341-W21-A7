@@ -6,8 +6,9 @@ import LoginForm	from './pages/LoginForm';
 import SubmitButton	from './SubmitButton';
 import UserPage from './pages/UserPage';
 import Post	from './components/Post';
+import Upload from './Upload';
 import {Route, Link} from 'react-router-dom'; 
-
+import Modal from'./Modal'
 
 class App extends React.Component {
 
@@ -112,13 +113,8 @@ UserStore.isLoggedIn = false;
 
 				<div className="container"> 
 				<Route exact path ="/Login" component = {LoginForm}></Route>
-				<div style ={BUTTON_WRAPPER_STYLES}>
-					<button>Open Modal</button>
-					<Modal>
-						Fancy Modal
-					</Modal>
-				</div>
-				<div style = {OTHER_CONTENT_STYLES}>Upload</div>
+				<Route exact path ="/Upload" component = {Upload}></Route>
+
 				 </div>
 				 <Route exact path ="/" component = {UserPage}></Route> 
 			</div>
