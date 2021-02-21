@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-body,
 html,
 #root,
 .app,
 .container {
     width: 100%;
     height: 100%;
+}
+
+body {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -23,15 +25,16 @@ html,
     align-items: center;
     justify-content: center;
     background-color: #282c34;
-    border: 1px solid white;
 }
 
 .loginForm {
     box-sizing: border-box;
     width: 100%;
-    max-width: 400px;
+    max-width: 378px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 370px;
+    margin-bottom: 400px;
 }
 
 .inputField {
