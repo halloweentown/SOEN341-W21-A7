@@ -1,0 +1,5 @@
+.upload {
+    object-fit: contain;
+    border: 1px solid lightgrey;
+    width: fit-content;
+}
