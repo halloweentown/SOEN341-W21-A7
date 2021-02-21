@@ -113,9 +113,8 @@ UserStore.isLoggedIn = false;
 
 				<div className="container"> 
 				<Route exact path ="/Login" component = {LoginForm}></Route>
-				<Route exact path ="/Upload" component = {Upload}></Route>
-
 				 </div>
+				 
 				 <Route exact path ="/" component = {UserPage}></Route> 
 			</div>
 			
