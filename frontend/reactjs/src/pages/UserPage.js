@@ -4,7 +4,7 @@ import '../style/App.css';
 import Post	                from '../components/Post';
 import Profile              from '../components/Profile';
 import fakestagram          from '../image/fakestagram_logo.jpg'
-import ImageUpload              from '../components/ImageUpload';
+import Upload from'../Upload'
 
 function UserPage() {
 
@@ -37,6 +37,7 @@ function UserPage() {
                 <div className="userpage__logo">
                     <a href= "/">Fakestagram</a>    
                 </div>
+                <Upload/>
                 <a href= "/Login">Log Out</a>    
             </div>
             <div className = "userpage__profile">
