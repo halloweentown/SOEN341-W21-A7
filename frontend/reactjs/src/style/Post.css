@@ -28,3 +28,17 @@
 .post__avatar {
     margin-right: 10px;
 }
+
+.post__input {
+    flex: 1;
+    height: fit-content;
+}
+
+.post__commentbar {
+    display: flex;
+}
+
+.post__button {
+    flex: 0;
+    height: 30px;
+}

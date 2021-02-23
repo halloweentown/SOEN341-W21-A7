@@ -62,10 +62,7 @@ export default function Upload({username}) {
                     </div>
                     <input type="button" value="Upload Post" id = "cta-btn" onClick ={handleUpload}></input>
                     <div className = "upload__image">
-                        
-                        {/* <Button onClick ={handleUpload}>
-                         Upload
-                        </Button> */}
+                    
                     </div>
                     
                 </form>

@@ -1,8 +1,17 @@
-import React from 'react';
+import React, {useState}    from 'react';
 import '../style/Post.css';
 import Avatar from '@material-ui/core/Avatar';
+import LoginForm from '../pages/LoginForm';
 
 function Post({username, caption, imageUrl}) {
+    const [comments, setComments] = useState([]);
+    const [comment, setComment] = useState(' ');
+
+    const postComment = (event) => {
+        //BackEnd 
+        //TODO: Take comment and send to database with postID
+    }
+
     return (
         <div className = "post">
             <div className = "post__header">
@@ -16,7 +25,25 @@ function Post({username, caption, imageUrl}) {
             <img className="post__image" src ={imageUrl}/>
             <h4 className="post__text"><strong>{username}:</strong> {caption}</h4>
              
-            <div className ="post_comments">
+    
+            <form className = "post__commentbar">
+                <input className = "post__input"
+                    type = "text"
+                    placeholder = "Add a comment..."
+                    value = {comment}
+                    onChange= {(e) => setComment(e.target.value)}
+                />
+                <button className = "post__button"
+                disabled = {!comment}
+                type = "submit"
+                onClick = {postComment}
+                > 
+                submit
+                </button>
+            </form>
+
+
+            <div className ="post__comments">
 
                 
             </div>
