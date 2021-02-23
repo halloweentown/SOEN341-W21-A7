@@ -26,7 +26,7 @@ function UserPage() {
             imageUrl: "https://www.andreasreiterer.at/wp-content/uploads/2017/11/react-logo-825x510.jpg.webp"
         }
     ]);
-
+   
     return (
         <div className="userpage">
             <div className="userpage__header">

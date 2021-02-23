@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 .post {
     background-color: white;
@@ -14,7 +14,7 @@
 }
 
 .post__text {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: normal;
     padding: 5px;
 }
@@ -41,4 +41,10 @@
 .post__button {
     flex: 0;
     height: 30px;
+    border: none;
+    color: blue;
+    border-top: 1px solid lightgray;
+}
+.post__comments {
+    padding: 20px;
 }
