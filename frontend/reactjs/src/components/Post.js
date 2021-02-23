@@ -10,6 +10,7 @@ function Post({username, caption, imageUrl}) {
     const postComment = (event) => {
         //BackEnd 
         //TODO: Take comment and send to database with postID
+        //test
     }
 
     return (
