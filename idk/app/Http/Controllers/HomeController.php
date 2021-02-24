@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Post;
+use App\Models\Comment;
 use Auth;
 
 class HomeController extends Controller
@@ -33,18 +34,22 @@ class HomeController extends Controller
        $posts = Auth::user();
 
        $online = Post::all();
+       $onlinecomment = Comment::all();
         
         return view('home', [
-            'posts' => $online
+            'posts' => $online, 
+            'comments'=>$onlinecomment
         ]);
         
         
     }
-
+    //C:\Users\Maxime\Downloads\idk\public\uploads\post
     public function store(Request $request)
     {
         $post = new post();
         $posts = Post::all();
+        $comment = new Comment;
+        $comments = Comment::all();
 
         $post->name = Auth::user()->name; 
         $post->caption = $request->input('body');
@@ -65,9 +70,31 @@ class HomeController extends Controller
         
         return view('home', [
             'post' => $post,
-            'posts'=>$posts
+            'posts'=>$posts,
+            'comments'=>$comments,
+            'comment'=>$comment
         ]);
         
+    }
+
+    public function save(Request $request){
+        //print_r($request->input());
+
+        $post = new post();
+        $posts = Post::all();
+        $comment = new Comment;
+        $comments = Comment::all();
+        $comment->text = $request->body;
+        $comment->post_id = $request ->postid;
+        $comment->user_name = Auth::user()->name; 
+        $comment->save();  
+
+        return view('home', [
+            'post' => $post,
+            'posts'=>$posts,
+            'comments'=>$comments,
+            'comment'=>$comment
+        ]);
     }
     
 }

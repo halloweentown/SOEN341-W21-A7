@@ -13,4 +13,6 @@ class Post extends Model
     function user(){
         return $this->belongsTo('App\User');
     }
+
+    
 }
