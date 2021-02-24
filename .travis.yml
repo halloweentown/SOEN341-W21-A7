@@ -5,14 +5,10 @@ language: php
 php:
   - 7.3
   - 7.4
-before_install:
-  - chmod +x build.sh
   
 before_script:
   - curl -s http://getcomposer.org/installer | php
   - php composer.phar install --dev
-
-script: ./build.sh
     
 #-language: node_js
     
