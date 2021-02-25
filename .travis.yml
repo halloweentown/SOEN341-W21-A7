@@ -1,7 +1,5 @@
-#matrix:
-#include:
 language: php
-  php:
+php:
   - 5.4
   - 5.5
   - 5.6
@@ -10,35 +8,11 @@ language: php
   - 7.2
   - 7.3
   - 7.4
-  os: linux
-  before_script:
+os: linux
+before_script:
   - composer install
   - cp .env.example .env
   - php artisan key:generate   
   - php artisan jwt:secret
-  script:
+script:
   - vendor/bin/phpunit
-#-language: node_js
-    
- # node_js:
- # - "stable"
- #cache:
- # directories:
- # - node_modules
- # script:
- # - npm test
- # - npm run build
-
-
-#Initial echo test :Travis for nodejs
-#language: node_js
-#node_js:
- # - "node"
-  #- "6"
-  #- "4"
-
-#attemtp to resolve Travis Issue:
-#   make: *** No rule to make target 'test'.  Stop.
-#   The command "make test" exited with 2.
-#script:
-  #- echo "Hello World"
