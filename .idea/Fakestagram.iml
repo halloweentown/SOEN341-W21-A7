@@ -8,8 +8,6 @@
       <sourceFolder url="file://$MODULE_DIR$/idk/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/tests/Feature" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/tests/Unit" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/phar-io/version" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/phpspec/prophecy" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/phpunit/php-code-coverage" />
@@ -22,6 +20,7 @@
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/symfony/deprecation-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/symfony/error-handler" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/idk/vendor/fakerphp/faker" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/symfony/event-dispatcher-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/symfony/finder" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/symfony/http-client-contracts" />
@@ -48,7 +47,6 @@
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/doctrine/inflector" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/doctrine/instantiator" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/doctrine/lexer" />
-      <excludeFolder url="file://$MODULE_DIR$/idk/vendor/fakerphp/faker" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/hamcrest/hamcrest-php" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/fideloper/proxy" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/fruitcake/laravel-cors" />
@@ -61,6 +59,7 @@
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/sebastian/complexity" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/sebastian/diff" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/idk/vendor/phpunit/phpunit" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/sebastian/exporter" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/sebastian/global-state" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/sebastian/lines-of-code" />
@@ -73,6 +72,7 @@
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/webmozart/assert" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/guzzlehttp/guzzle" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/idk/vendor/facade/flare-client-php" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/nunomaduro/collision" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/swiftmailer/swiftmailer" />
@@ -83,6 +83,7 @@
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/phpdocumentor/type-resolver" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/graham-campbell/result-type" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/idk/vendor/intervention/image" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/psr/container" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/psr/event-dispatcher" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/psr/http-client" />
@@ -96,7 +97,6 @@
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/asm89/stack-cors" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/nikic/php-parser" />
-      <excludeFolder url="file://$MODULE_DIR$/idk/vendor/facade/flare-client-php" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/facade/ignition" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/facade/ignition-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/league/commonmark" />
@@ -116,8 +116,6 @@
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/myclabs/deep-copy" />
       <excludeFolder url="file://$MODULE_DIR$/idk/vendor/phar-io/manifest" />
-      <excludeFolder url="file://$MODULE_DIR$/idk/vendor/phpunit/phpunit" />
-      <excludeFolder url="file://$MODULE_DIR$/idk/vendor/intervention/image" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
