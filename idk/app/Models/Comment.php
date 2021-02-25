@@ -7,10 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Comment extends Model
 {
-    
-    protected $table = 'comments';
-    protected $fillable = ['test', 'user_name']; 
-    
 
-   
+    protected $table = 'comments';
+    protected $fillable = ['text', 'user_name'];
+
+
+    function posts()
+    {
+        return $this->belongsTo(Post::class);
+    }
+
+
 }
