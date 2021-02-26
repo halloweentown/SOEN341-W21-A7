@@ -3,18 +3,17 @@ php:
   - 7.3
   - 7.4
   - 8.0
-  - 8.1
 os: linux
-before_script:
+before_script: 
   - cd idk
-  - composer self-update
-  - travis_retry composer install --no-interaction
   - cp .env.example .env
+  - composer self-update
+  - composer install --no-interaction
   - php artisan key:generate
-  #- php artisan jwt:generate
   - php artisan migrate
+  #- php artisan serve
 before_install:
-   - mysql -e 'CREATE DATABASE idk;'
+  - mysql -e 'CREATE DATABASE idk;'
 script:
   - vendor/bin/phpunit
 services:
