@@ -13,8 +13,8 @@ before_script:
   - php artisan migrate
   #- php artisan serve
 before_install:
-   - mysql -e 'CREATE DATABASE idk;'
+  - mysql -e 'CREATE DATABASE idk;'
 script:
-  - idk/vendor/bin/phpunit
+  - vendor/bin/phpunit
 services:
   - mysql
