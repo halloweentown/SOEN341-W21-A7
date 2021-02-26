@@ -11,7 +11,7 @@ php:
 os: linux
 before_script:
   - travis_retry composer install
-  - php artisan key:generate   
-  - php artisan jwt:secret
+  #- php artisan key:generate   
+  #- php artisan jwt:secret
 script:
   - vendor/bin/phpunit
