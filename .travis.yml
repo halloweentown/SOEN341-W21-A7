@@ -12,7 +12,7 @@ php:
   - 8.1
 os: linux
 before_script:
-  - travis_retry composer instal
+  - travis_retry composer install
   - php artisan key:generate   
   - php artisan jwt:secret
 script:
