@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70147f46-dca6-4e30-bbc7-c23169411226" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/app/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/app/Models/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/database/migrations/2021_02_24_042740_create_comments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/database/migrations/2021_02_24_042740_create_comments_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/idk/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/resources/views/home.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,7 +157,7 @@
       <workItem from="1614316064532" duration="998000" />
       <workItem from="1614317451462" duration="705000" />
       <workItem from="1614320853807" duration="637000" />
-      <workItem from="1614362028962" duration="2714000" />
+      <workItem from="1614362028962" duration="2988000" />
     </task>
     <servers />
   </component>

@@ -62,9 +62,9 @@
         <div align = "center" style="position: relative; width:270px;margin-bottom: 100px">
             <form action="/comment" method="POST" enctype="multipart/form-data">
                 {{ csrf_field() }}
-                <textarea maxlength="300" name="body"  class="form-control" placeholder="Enter your comment here!"></textarea>
+                <div><textarea maxlength="300" name="body"  class="form-control" placeholder="Enter your comment here!"></textarea></div>
                 <input type="hidden" name="postid" value="{{$post['id']}}">
-                <input type="submit" name="upload" value="Comment"/>
+                <div align = "right"><input type="submit" name="upload" value="Comment"/></div>
             </form>
         </div>
 
