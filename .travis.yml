@@ -11,7 +11,7 @@ before_script:
   - composer install --no-interaction
   - php artisan key:generate
   - php artisan migrate
-  - php artisan serve
+  #- php artisan serve
 before_install:
    - mysql -e 'CREATE DATABASE idk;'
 script:
