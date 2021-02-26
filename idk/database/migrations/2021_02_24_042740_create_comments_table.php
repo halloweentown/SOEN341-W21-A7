@@ -18,6 +18,7 @@ class CreateCommentsTable extends Migration
             $table->string('post_id');
             $table->string('text');
             $table->string('user_name');
+            $table->mediumText('avatar')->nullable();
             $table->timestamps();
         });
     }

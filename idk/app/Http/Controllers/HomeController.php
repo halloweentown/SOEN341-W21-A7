@@ -100,6 +100,7 @@ class HomeController extends Controller
         $comment->text = $request->body;
         $comment->post_id = $request ->postid;
         $comment->user_name = Auth::user()->name;
+        $comment->avatar = Auth::user()->avatar;
         $comment->save();
 
         /*

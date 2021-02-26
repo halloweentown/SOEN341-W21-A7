@@ -49,13 +49,13 @@
                 <b>{{$post['name']}}</b>
             </div>
             <div class="card-img"><img src="/uploads/post/{{$post['image']}}" width="270px" height="480px"></div>
-            <div class="card-text" align="left" style="position :relative;width:270px"> <p><b>{{$post['name']}}</b>  {{$post['caption']}}</p></div>
+            <div class="card-text" align="left" style="position :relative;width:270px;margin-top: 1%; vertical-align: middle;"> <p><img src="{{$post['avatar']}}" style= "width: 20px; height: 20px; border-radius: 50%">   <b>{{$post['name']}}</b>  {{$post['caption']}}</p></div>
         </div>
 
         @foreach($comments as $comment)
             @if($post['id']==$comment['post_id'])
 
-                    <div class="card-text" align="left" style="position :relative;width:270px"><p><b>{{$comment['user_name']}}</b>  {{$comment['text']}}</p></div>
+                    <div class="card-text" align="left" style="position :relative; width:270px;vertical-align: middle;"><p><img  src="{{$comment['avatar']}}" style= "width: 20px; height: 20px; border-radius: 50%; vertical-align: center;">   <b>{{$comment['user_name']}}</b>  {{$comment['text']}}</p></div>
             @endif
         @endforeach
 
