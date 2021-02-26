@@ -13,5 +13,5 @@ before_script:
   - travis_retry composer install
   #- php artisan key:generate   
   #- php artisan jwt:secret
-script:
-  - vendor/bin/phpunit
+#script:
+  #- vendor/bin/phpunit
