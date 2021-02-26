@@ -7,13 +7,14 @@ php:
 os: linux
 before_script:
   - cd idk
-  - travis_retry composer install
-  - cp .env.travis .env
+  - composer self update
+  - travis_retry composer install --no-interaction
+  - cp .env.example .env
   - php artisan key:generate
-  - php artisan jwt:generate
+  #- php artisan jwt:generate
   - php artisan migrate
 before_install:
-   - mysql -e 'CREATE DATABASE max;'
+   - mysql -e 'CREATE DATABASE idk;'
 script:
   - vendor/bin/phpunit
 services:
