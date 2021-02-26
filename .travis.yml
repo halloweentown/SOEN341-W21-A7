@@ -7,7 +7,7 @@ php:
 os: linux
 before_script:
   - cd idk
-  - composer self update
+  - composer self-update
   - travis_retry composer install --no-interaction
   - cp .env.example .env
   - php artisan key:generate
