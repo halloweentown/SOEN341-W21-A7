@@ -10,6 +10,7 @@
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.phar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/idk/.env" beforeDir="false" afterPath="$PROJECT_DIR$/idk/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/idk/vendor/composer/InstalledVersions.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/vendor/composer/InstalledVersions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/idk/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/vendor/composer/installed.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
@@ -7903,7 +7904,7 @@
       <workItem from="1614316064532" duration="998000" />
       <workItem from="1614317451462" duration="705000" />
       <workItem from="1614320853807" duration="637000" />
-      <workItem from="1614362028962" duration="8815000" />
+      <workItem from="1614362028962" duration="9132000" />
     </task>
     <servers />
   </component>
