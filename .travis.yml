@@ -6,14 +6,14 @@ php:
 os: linux
 before_script: 
   - cd idk
-  - cp .env.travis .env
+  - cp .env.example .env
   - composer self-update
   - composer install --no-interaction
   - php artisan key:generate
   - php artisan migrate
   - php artisan serve
 before_install:
-   - mysql -e 'CREATE DATABASE max;'
+   - mysql -e 'CREATE DATABASE idk;'
 script:
   - idk/vendor/bin/phpunit
 services:
