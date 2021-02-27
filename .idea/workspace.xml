@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="70147f46-dca6-4e30-bbc7-c23169411226" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/idk/storage/logs/laravel.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idk/bootstrap/cache/packages.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/bootstrap/cache/packages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idk/bootstrap/cache/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/bootstrap/cache/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idk/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/idk/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idk/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/idk/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +142,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-laravel-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -163,6 +163,8 @@
       <workItem from="1614317451462" duration="705000" />
       <workItem from="1614320853807" duration="637000" />
       <workItem from="1614362028962" duration="2988000" />
+      <workItem from="1614415413706" duration="16000" />
+      <workItem from="1614424010802" duration="328000" />
     </task>
     <servers />
   </component>
