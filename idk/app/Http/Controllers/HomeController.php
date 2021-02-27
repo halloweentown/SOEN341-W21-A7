@@ -33,7 +33,7 @@ class HomeController extends Controller
         */
        $posts = Auth::user();
 
-       $online = Post::all();
+       $online = Post::all()->sortByDesc('created_at');
         $onlinecomment = Comment::all();
 
         return view('home', [
@@ -62,7 +62,7 @@ class HomeController extends Controller
     public function store(Request $request)
     {
         $post = new post();
-        $posts = Post::all();
+        $posts = Post::all()->sortByDesc('created_at');
 
 
         $post->name = Auth::user()->name;
@@ -84,6 +84,7 @@ class HomeController extends Controller
 
         $post->save();
 
+
         return redirect()->back();
 
 
@@ -94,7 +95,7 @@ class HomeController extends Controller
         //print_r($request->input());
 
         $post = new post();
-        $posts = Post::all();
+        $posts = Post::all()->sortByDesc('created_at');
         $comment = new Comment;
         $comments = Comment::all();
         $comment->text = $request->body;

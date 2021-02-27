@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70147f46-dca6-4e30-bbc7-c23169411226" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/idk/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idk/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idk/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idk/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idk/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/idk/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +133,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1p0NUYET5nuV2EmZGDl1qJ3maWM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -163,5 +168,8 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
