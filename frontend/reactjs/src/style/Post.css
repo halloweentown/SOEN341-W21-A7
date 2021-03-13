@@ -38,13 +38,26 @@
     display: flex;
 }
 
-.post__button {
+.post__commentButton {
     flex: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
     height: 30px;
-    border: none;
-    color: blue;
-    border-top: 1px solid lightgray;
+    border: solid 1px lightgray;
+    color: #0095f6;
+    cursor: pointer;
 }
+
+.post__followButton {
+    margin-left: 15px;
+    background-color: #0095f6;
+    border: none;
+    border-radius: 0.5em;
+    padding: 5px 12px;
+    color: white;
+    cursor: pointer;
+}
+
 .post__comments {
     padding: 20px;
 }

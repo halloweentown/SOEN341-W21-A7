@@ -23,7 +23,9 @@ function Post({username, caption, imageUrl}) {
                     alt = {username}
                     src = "static/images/avatar/1.jpg"
                 />
-                <h3>{username}</h3>
+                <h3>{username} </h3>
+                <button className = "post__followButton"> Follow  
+                </button>
             </div>
             <img className="post__image" src ={imageUrl}/>
             <h4 className="post__text"><strong>{username}:</strong> {caption}</h4>
@@ -42,7 +44,7 @@ function Post({username, caption, imageUrl}) {
                     value = {comment}
                     onChange= {(e) => setComment(e.target.value)}
                 />
-                <button className = "post__button"
+                <button className = "post__commentButton"
                 disabled = {!comment}
                 type = "submit"
                 onClick = {postComment}
