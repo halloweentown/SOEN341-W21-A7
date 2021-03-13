@@ -1,0 +1,10 @@
+.follow__button button {
+    margin-left: 15px;
+    background-color: #0095f6;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5em;
+    padding: 5px 12px;
+    color: white;
+    cursor: pointer;
+}

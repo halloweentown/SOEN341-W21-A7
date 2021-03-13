@@ -2,8 +2,10 @@ import React, {useState}    from 'react';
 import '../style/Post.css';
 import Avatar from '@material-ui/core/Avatar';
 import LoginForm from '../pages/LoginForm';
+import Follow from './FollowButton'
+import FollowButton from './FollowButton';
 
-function Post({username, caption, imageUrl}) {
+function Post({username, caption, imageUrl})  {
     const [comments, setComments] = useState([{
         username : "Leo",
         text: "testing 4",
@@ -15,6 +17,7 @@ function Post({username, caption, imageUrl}) {
         //TODO: Take comment and send to database with postID
     }
 
+
     return (
         <div className = "post">
             <div className = "post__header">
@@ -24,8 +27,9 @@ function Post({username, caption, imageUrl}) {
                     src = "static/images/avatar/1.jpg"
                 />
                 <h3>{username} </h3>
-                <button className = "post__followButton"> Follow  
-                </button>
+                <div className = "post__followButton">
+                    <FollowButton/>
+                </div>
             </div>
             <img className="post__image" src ={imageUrl}/>
             <h4 className="post__text"><strong>{username}:</strong> {caption}</h4>

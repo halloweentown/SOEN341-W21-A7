@@ -48,16 +48,6 @@
     cursor: pointer;
 }
 
-.post__followButton {
-    margin-left: 15px;
-    background-color: #0095f6;
-    border: none;
-    border-radius: 0.5em;
-    padding: 5px 12px;
-    color: white;
-    cursor: pointer;
-}
-
 .post__comments {
     padding: 20px;
 }
