@@ -1,6 +1,6 @@
 .following__button button {
     margin-left: 15px;
-    background-color: #0095f6;
+    background-color: grey;
     font-weight: bold;
     border: none;
     border-radius: 0.5em;
@@ -11,7 +11,7 @@
 
 .follow__button button {
     margin-left: 15px;
-    background-color: grey;
+    background-color: #0095f6;
     font-weight: bold;
     border: none;
     border-radius: 0.5em;
