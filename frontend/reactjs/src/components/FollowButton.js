@@ -7,7 +7,9 @@ class FollowButton extends Component{
         super(props);
         this.state = {
             isToggleOn: false
+            
         }
+
         //binding the handle click
         //this.handleClick = this.handleClick.bind(this);
     }
@@ -18,13 +20,17 @@ class FollowButton extends Component{
             isToggleOn: !state.isToggleOn
         }));
     }
-    
+
 
     render(){
-        return(
-            <div className = "follow__button"> 
-                <button onClick ={this.handleClick}>{this.state.isToggleOn? "Following" : "Follow"}</button>
+        let btn_class = this.state.isToggleOn ? "following__button": "follow__button ";
 
+        return(
+            <div className = {btn_class}>
+                <button 
+                    onClick ={this.handleClick}>
+                        {this.state.isToggleOn? "Following" : "Follow"}
+                </button>
             </div>
         )
     }
