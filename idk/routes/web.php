@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CommentsController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 
@@ -22,15 +23,18 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::post('/upload', function(Request $request){
-    $request->image->store('images', 'public');
-    return 'Uploaded!';
-});
-
-Route::post('/comment', 'App\Http\Controllers\HomeController@save');
+Route::get('/logout', [\App\Http\Controllers\Auth\LoginController::class, 'logout']);
 
 Route::post('/home', 'App\Http\Controllers\HomeController@store')->name('home');
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::post('/comment', 'App\Http\Controllers\HomeController@save');
