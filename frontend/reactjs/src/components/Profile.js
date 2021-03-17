@@ -13,8 +13,6 @@
                     src = "static/images/avatar/1.jpg"
                 />
                     <h3>{profilename}</h3>
-
-                    <h3> [add button here to follow]</h3>
                 </div>
                 <h4 className = "profile__quote">
                     {profilequote}
