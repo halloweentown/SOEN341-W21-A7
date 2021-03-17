@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70147f46-dca6-4e30-bbc7-c23169411226" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/app/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/bootstrap/cache/packages.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/bootstrap/cache/packages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/bootstrap/cache/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/bootstrap/cache/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/database/migrations/2021_02_16_164617_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/database/migrations/2021_02_16_164617_create_posts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/storage/framework/sessions/RoVlbWjhg99PA7K3ViA8ZJ08buLQnw9rAnjAEwAh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/idk/storage/logs/laravel.log" afterDir="false" />
-    </list>
+    <list default="true" id="70147f46-dca6-4e30-bbc7-c23169411226" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,7 +160,7 @@
       <workItem from="1614362028962" duration="2988000" />
       <workItem from="1614415413706" duration="16000" />
       <workItem from="1614424010802" duration="328000" />
-      <workItem from="1615994434168" duration="13717000" />
+      <workItem from="1615994434168" duration="13984000" />
     </task>
     <servers />
   </component>
