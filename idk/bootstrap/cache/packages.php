@@ -70,4 +70,11 @@
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
     ),
   ),
+  'overtrue/laravel-follow' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Overtrue\\LaravelFollow\\FollowServiceProvider',
+    ),
+  ),
 );

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Comment;
+use App\Models\Following;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Post;
@@ -35,10 +36,12 @@ class HomeController extends Controller
 
        $online = Post::all()->sortByDesc('created_at');
         $onlinecomment = Comment::all();
+        $follow = Following::all();
 
         return view('home', [
             'posts' => $online,
             'comments'=>$onlinecomment,
+            'followings' => $follow,
         ]);
 
 
@@ -67,6 +70,7 @@ class HomeController extends Controller
 
         $post->name = Auth::user()->name;
         $post->avatar = Auth::user()->avatar;
+        $post->userID = Auth::user()->id;
         $post->caption = $request->input('body');
         $post->image = $request->input('image');
 
