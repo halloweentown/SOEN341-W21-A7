@@ -26,28 +26,33 @@ Since Social Media has now become a distinct part of our lives, this project inc
 - Allow users to leave a comment for a picture that was posted
 
 
-## 5. Languages & Techniques Used (Planned)
+## 5. Languages & Techniques Used
 ### **Front End**
+- Blade
 - CSS
 - HTML
-- Javascript (React Native)
+- Javascript
 
 ### **Back End**
 - Laravel
 - Javascript
 - PHP
-- Python
-- Firebase (?)
 - MySQL
 - SQL
 
-### **UI design**
+### **UI design** (Sprint 1)
 - Mockplus chosen for Wireframe.
 - Wire Frame prototype publish [here](http://run.mockplus.com/J14EA8NbBWmZRcTN/index.html)
 
-### **Implementation Design**
+## 6. **Implementation Design** (See Repo for files)
+### 6.1 Relational Database Design (Deprecated - Sprint 2)
+![image](https://user-images.githubusercontent.com/16064297/111727249-e834f000-8840-11eb-8a4a-5082315c1d15.png)
+
+### 6.2 Architecture Design (Sprint 3)
+![image](https://user-images.githubusercontent.com/16064297/111726964-4f9e7000-8840-11eb-84b6-4b2f97de57f1.png)
 - UML Diagrams via [diagrams.net](https://app.diagrams.net/) (formerly Draw.io) and/or Visio
 
+### Other UML diagram templates
     #### Behavioral UML Diagram
     - [Activity Diagram](https://tallyfy.com/uml-diagram/#activity-diagram)
     - [Use Case Diagram](https://tallyfy.com/uml-diagram/#use-case-diagram)
@@ -66,8 +71,7 @@ Since Social Media has now become a distinct part of our lives, this project inc
     - [Package Diagram](https://tallyfy.com/uml-diagram/#package-diagram) (Represents deployment diagrams as black boxes to depict high level interactions.)
     - [~~Profile Diagram~~](https://tallyfy.com/uml-diagram/#profile-diagram)
 
-
-## 6. Style Guides 
+## 7. Style Guides 
 ### Git Commits
 Git Commits:
 - 🅕 (:regional_indicator_f): Front End code
