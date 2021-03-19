@@ -17,6 +17,10 @@
         "laravel/tinker": "^2.6",
         "laravel/ui": "^3.2"
     },
+    "require": {
+        "laravel/framework": "4.1.*",
+        "intervention/image": "dev-master"
+    },
     "require-dev": {
         "facade/ignition": "^2.5.13",
         "fakerphp/faker": "^1.13.0",
