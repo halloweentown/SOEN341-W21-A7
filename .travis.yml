@@ -7,7 +7,7 @@ os: linux
 before_script: 
   - cd idk
   - cp .env.example .env
-  - composer update
+  - composer update --with-all-dependencies
   - composer install --no-interaction
   - php artisan key:generate
   - php artisan migrate

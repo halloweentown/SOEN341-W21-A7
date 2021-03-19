@@ -6,6 +6,7 @@ use App\Models\Comment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Post;
+use App\Models\Follow;
 use Auth;
 
 class HomeController extends Controller
@@ -35,10 +36,12 @@ class HomeController extends Controller
 
        $online = Post::all()->sortByDesc('created_at');
         $onlinecomment = Comment::all();
+        $onlinefollow = Follow::all();
 
         return view('home', [
             'posts' => $online,
             'comments'=>$onlinecomment,
+            'follows'=>$onlinefollow
         ]);
 
 
@@ -82,6 +85,10 @@ class HomeController extends Controller
 
         }
 
+        if ($request->input('body') == null){
+            $post->caption = " ";
+        }
+
         $post->save();
 
 
@@ -114,6 +121,20 @@ class HomeController extends Controller
        */
 
         return redirect()->back();
+    }
+
+    public function follow(Request $request){
+
+        $follow= new Follow;
+        $follows = Follow::all();
+        $follow->beingfollowed = $request -> postname;
+        $follow->following = Auth::user()->name;
+        $follow->save();
+
+        
+        
+        return redirect()->back();
+        
     }
 
 

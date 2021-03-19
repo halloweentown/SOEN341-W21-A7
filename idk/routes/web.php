@@ -38,3 +38,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::post('/comment', 'App\Http\Controllers\HomeController@save');
+
+Route::post('/follow', 'App\Http\Controllers\HomeController@follow');
