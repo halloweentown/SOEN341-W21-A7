@@ -47,7 +47,14 @@
 
             <div class="card-title" align="left" style="position :relative;width:500px; display:flex">
                 <img src="{{$post['avatar']}}" style= "width: 30px; height: 30px; border-radius: 50%">
-                <b>{{$post['name']}}</b>
+
+                <form action="/userpage" method="POST" enctype="multipart/form-data">
+                    {{ csrf_field() }}
+                    <input type="hidden" name="username" value="{{$post['name']}}">
+                    <input type="submit" name="url" value="{{$post['name']}}">
+                </form>
+                
+                <!-- <b>{{$post['name']}}</b> -->
 
                 <?php
                     foreach($follows as $follow){

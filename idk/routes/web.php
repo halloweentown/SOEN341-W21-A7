@@ -40,3 +40,5 @@ Auth::routes();
 Route::post('/comment', 'App\Http\Controllers\HomeController@save');
 
 Route::post('/follow', 'App\Http\Controllers\HomeController@follow');
+
+Route::post('/userpage', 'App\Http\Controllers\UserpageController@basicuser');
