@@ -10232,3 +10232,35 @@ Did you mean one of these?
 #53 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\server.php(21): require_once('C:\\\\Users\\\\Maxime...')
 #54 {main}
 "} 
+[2021-03-22 18:25:09] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (ParseError(code: 0): syntax error, unexpected end of file at C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\outes\\web.php:49)
+[stacktrace]
+#0 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Users\\\\Maxime...')
+#1 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Users\\\\Maxime...')
+#2 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(135): Illuminate\\Routing\\Router->group(Array, 'C:\\\\Users\\\\Maxime...')
+#3 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\app\\Providers\\RouteServiceProvider.php(48): Illuminate\\Routing\\RouteRegistrar->group('C:\\\\Users\\\\Maxime...')
+#4 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Providers\\RouteServiceProvider->App\\Providers\\{closure}()
+#5 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#8 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(610): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#9 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(120): Illuminate\\Container\\Container->call(Object(Closure))
+#10 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(45): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#11 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#12 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#13 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#14 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#15 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(610): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#16 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(113): Illuminate\\Container\\Container->call(Object(Closure))
+#17 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(917): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#18 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(895): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+#19 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 25)
+#20 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(896): array_walk(Array, Object(Closure))
+#21 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#22 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(237): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#23 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#24 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#25 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\Maxime\\Documents\\GitHub\\SOEN341-W21-A7\\idk\\server.php(21): require_once('C:\\\\Users\\\\Maxime...')
+#28 {main}
+"} 
