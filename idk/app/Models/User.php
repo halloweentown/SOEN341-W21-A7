@@ -58,6 +58,10 @@ class User extends Authenticatable
         return $this->belongsToMany(User::class, 'followings', 'userFollowing', 'userFollowed');
     }
 
+    function followers() {
+        return $this->belongsToMany(User::class, 'followings', 'userFollowed', 'userFollowing');
+    }
+
 /*    function follow(Post $post) {
         return $this->following()->attach($post->userID);
     }
@@ -71,6 +75,14 @@ class User extends Authenticatable
         return $this->following()->where('userFollowed', $post->userID)->count();
     }
 
+    function isFollowingUser(User $user)
+    {
+        return $this->following()->where('userFollowed', $user->id)->count();
+    }
 
+    function profile()
+    {
+        return $this->hasOne(Profile::class);
+    }
 
 }

@@ -46,7 +46,7 @@
             <div style="width:270px; display: inline-flex;">
                     <div class="card-title" align="left" style="position :relative;width:270px;padding-top: 5px">
                         <img src="{{$post['avatar']}}" style= "width: 30px; height: 30px; border-radius: 50%">
-                        <b>{{$post['name']}}</b>
+                        <a href="{{ route('profile.page', $post->userID) }}"><b>{{$post['name']}}</b></a>
                     </div>
 
                     <div class="card-title" align="right" style="position :relative;width:270px;">

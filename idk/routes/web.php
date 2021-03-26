@@ -41,4 +41,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Auth::routes();
 
+Route::get('/profile/{user}', [App\Http\Controllers\ProfileController::class, 'index'])->name('profile.page');
+
 Route::post('/comment', 'App\Http\Controllers\HomeController@save');
