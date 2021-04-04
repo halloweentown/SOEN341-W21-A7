@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70147f46-dca6-4e30-bbc7-c23169411226" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/idk/resources/views/profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/bootstrap/cache/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/bootstrap/cache/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/idk/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/idk/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +141,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SOEN341-W21-A7-main/idk" />
+    <property name="last_opened_file_path" value="$USER_HOME$/SOEN341-W21-A7-main/idk" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -176,7 +169,11 @@
       <workItem from="1616016324424" duration="1852000" />
       <workItem from="1616024745514" duration="13753000" />
       <workItem from="1616129210781" duration="87000" />
-      <workItem from="1616780227217" duration="17896000" />
+      <workItem from="1616780227217" duration="18758000" />
+      <workItem from="1616799242278" duration="86000" />
+      <workItem from="1617045851883" duration="871000" />
+      <workItem from="1617059830763" duration="2787000" />
+      <workItem from="1617549773702" duration="5091000" />
     </task>
     <servers />
   </component>
