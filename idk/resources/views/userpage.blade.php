@@ -12,6 +12,22 @@
         <?php 
         echo $usernametoview;
         ?>
+        <p></p>
+        <p>Followers:</p>
+        @foreach($follows as $follow)
+        @if($follow['beingfollowed']==$usernametoview)
+        <div> {{$follow->following}}</div>
+        @endif
+        @endforeach
+        <p></p>
+        <p>Following:</p>
+        @foreach($follows as $follow)
+        @if($follow['following']==$usernametoview)
+        <div> {{$follow->beingfollowed}}</div>
+        @endif
+        @endforeach
+
+        
 
         @foreach($posts as $post)
         @if($post['name']==$usernametoview)
