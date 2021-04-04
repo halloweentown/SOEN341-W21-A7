@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="70147f46-dca6-4e30-bbc7-c23169411226" name="Default Changelist" comment="Updating .gitignore, adding restrictions on uploaded images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/.env" beforeDir="false" afterPath="$PROJECT_DIR$/idk/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/bootstrap/cache/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/bootstrap/cache/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/idk/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/storage/framework/sessions/RoVlbWjhg99PA7K3ViA8ZJ08buLQnw9rAnjAEwAh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/idk/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/idk/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/idk/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/idk/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,7 +168,7 @@
       <workItem from="1614362028962" duration="2988000" />
       <workItem from="1614415413706" duration="16000" />
       <workItem from="1614424010802" duration="328000" />
-      <workItem from="1617573707701" duration="550000" />
+      <workItem from="1617573707701" duration="1469000" />
     </task>
     <servers />
   </component>

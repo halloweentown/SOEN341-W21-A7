@@ -3,6 +3,7 @@
 /public/storage
 /public/uploads
 /storage/*.key
+/storage/logs
 /vendor
 .env
 .env.backup
@@ -10,6 +11,6 @@
 docker-compose.override.yml
 Homestead.json
 Homestead.yaml
-workspace.xml
+/.idea/workspace.xml
 npm-debug.log
 yarn-error.log
