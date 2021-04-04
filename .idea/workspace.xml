@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70147f46-dca6-4e30-bbc7-c23169411226" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Fakestagram.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Fakestagram.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/idk/storage/logs/laravel.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idk/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/idk/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,11 +13,14 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/idk/composer.json</pharConfigPath>
-    <execution>
-      <executable path="composer" />
-    </execution>
+    <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="backend-MahHairy-Profile-2" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -141,7 +145,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/SOEN341-W21-A7-main/idk" />
+    <property name="last_opened_file_path" value="$USER_HOME$/react-laravel-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -164,16 +168,6 @@
       <workItem from="1614362028962" duration="2988000" />
       <workItem from="1614415413706" duration="16000" />
       <workItem from="1614424010802" duration="328000" />
-      <workItem from="1615994434168" duration="16946000" />
-      <workItem from="1616014472857" duration="661000" />
-      <workItem from="1616016324424" duration="1852000" />
-      <workItem from="1616024745514" duration="13753000" />
-      <workItem from="1616129210781" duration="87000" />
-      <workItem from="1616780227217" duration="18758000" />
-      <workItem from="1616799242278" duration="86000" />
-      <workItem from="1617045851883" duration="871000" />
-      <workItem from="1617059830763" duration="2787000" />
-      <workItem from="1617549773702" duration="5091000" />
     </task>
     <servers />
   </component>
@@ -181,15 +175,6 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
