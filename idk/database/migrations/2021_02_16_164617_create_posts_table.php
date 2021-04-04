@@ -17,6 +17,7 @@ class CreatePostsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->mediumText('avatar')->nullable();
+            $table->unsignedBigInteger('userID');
             $table->string('caption');
             $table->mediumText('image')->nullable();
             $table->timestamps();

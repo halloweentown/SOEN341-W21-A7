@@ -27,6 +27,10 @@ Route::get('/logout', [\App\Http\Controllers\Auth\LoginController::class, 'logou
 
 Route::post('/home', 'App\Http\Controllers\HomeController@store')->name('home');
 
+Route::get('/follow/{post}', [App\Http\Controllers\FollowingController::class, 'follow'])->name('user.follow');
+
+Route::get('/unfollow/{post}', [App\Http\Controllers\FollowingController::class, 'unfollow'])->name('user.unfollow');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -36,7 +40,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
+
+Route::get('/profile/{user}', [App\Http\Controllers\ProfileController::class, 'index'])->name('profile.page');
 
 Route::post('/comment', 'App\Http\Controllers\HomeController@save');
-
-Route::post('/follow', 'App\Http\Controllers\HomeController@follow');

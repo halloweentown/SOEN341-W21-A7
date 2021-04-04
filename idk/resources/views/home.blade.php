@@ -9,12 +9,14 @@
                 <div class="card-header">Updates</div>
 
                 <div class="card-body">
+                    <!-- This form is filled when the user wants to post a picture. The form takes in a caption and an image.-->
                     <form  action="{{route('home')}}" method="POST" enctype="multipart/form-data" autocomplete="off">
                         {{ csrf_field() }}
                         <textarea name="body" id="caption" rows="3" cols="25" class="form-control" placeholder="Enter your caption here,upload your picture, then press submit!"></textarea>
                         <input type="file" name="image"/>
                         <input type="submit" name="upload" value="Upload"/>
 
+                        <!-- This script limits the amount of words that the user can put in their caption. -->
                         <script>
                             //get the text area element
                             //keypress event for when user presses a key
@@ -41,60 +43,50 @@
     </div>
 
     <div align="center" style="position: relative; margin-top: 100px" >
-        @foreach($posts as $post)
         
+        <!-- This is a foreach loop which will be used to diplay the posts, an array of posts got sent during the route which is how we have access to it.-->
+        @foreach($posts as $post)
         <div>
-
-            <div class="card-title" align="left" style="position :relative;width:500px; display:flex">
-                <img src="{{$post['avatar']}}" style= "width: 30px; height: 30px; border-radius: 50%">
-                <b>{{$post['name']}}</b>
-
-                <?php
-                    foreach($follows as $follow){
-                        $foo = FALSE;
-                    if($follow['beingfollowed']==$post['name'] && $follow['following']==Auth::user()->name){
-                        $foo=TRUE; 
-                        break;
-                    } 
-                    }
-
-                    if($post['name']==Auth::user()->name){
-
-                    }elseif($foo){
-                       
+            <div style="width:270px; display: inline-flex;">
+                    <!-- This displays the user's username over a post, it is also used as a link so that we can be redirected to the user's page.-->
+                    <div class="card-title" align="left" style="position :relative;width:270px;padding-top: 5px">
+                        <img src="{{$post['avatar']}}" style= "width: 30px; height: 30px; border-radius: 50%">
+                        <a href="{{ route('profile.page', $post->userID) }}"><b>{{$post['name']}}</b></a>
+                    </div>
+                    
+                    <!-- This part is for the following button, if you are viewing your post, it doesn't appear, if you are unfollowing you can unfollow, 
+                    and if you aren't following you can follow.-->
+                    <div class="card-title" align="right" style="position :relative;width:270px;">
+                        @if(!Auth::user()->isFollowing($post))
+                            <!-- This is if you are viewing your own post.-->
+                            @if(Auth::user()->id === $post->userID)
+                                <a href=""></a>
+                            @else
+                            <!-- This is if you view a post from someone you aren't following.-->
+                                <a href="{{ route('user.follow', $post->userID) }}" class="btn btn-success">Follow</a>
+                            @endif
                         
-                        echo '&nbsp&nbsp Following';
-                        
-                        
-                    }else{
-                        echo'<form action="/follow" method="POST">';
-                        echo '<input type="hidden" name="_token" value="'.Session::token().'">';
-                        echo '<input type="hidden" name="postname" value="'.$post['name'].'">';
-                        echo '<input type="submit" value="Follow!" style="margin-left: 15px; background-color: #0095f6; font-weight: bold; border: none;
-                        border-radius: 0.5em; padding: 5px 12px; color: white;cursor: pointer;"> ';
-                        echo '</form>';
-                    }
-                ?>
-                
-                
-               
-               
-                
-                
-               
+                        <!-- This is if you are following the person, the button will allow you to unfollow the user.-->
+                        @elseif(Auth::user()->isFollowing($post))
+                            <a href="{{ route('user.unfollow', $post->userID) }}" class="btn btn-danger">Unfollow</a>
+
+                        @endif
+                    </div>
             </div>
-            <div class="card-img"><img src="/uploads/post/{{$post['image']}}" width="500px"></div>
-            <div class="card-text" align="left" style="position :relative;width:500px;margin-top: 1%; vertical-align: middle;"> <p><img src="{{$post['avatar']}}" style= "width: 20px; height: 20px; border-radius: 50%">   <b>{{$post['name']}}</b>  {{$post['caption']}}</p></div>
+            <div class="card-img"><img src="/uploads/post/{{$post['image']}}" width="270px" height="480px"></div>
+            <div class="card-text" align="left" style="position :relative;width:270px;margin-top: 1%; vertical-align: middle;"> <p><img src="{{$post['avatar']}}" style= "width: 20px; height: 20px; border-radius: 50%">   <b>{{$post['name']}}</b>  {{$post['caption']}}</p></div>
         </div>
-
+        
+        <!-- This takes an array of comments attributed to the post so that they can be displayed.-->
         @foreach($comments as $comment)
             @if($post['id']==$comment['post_id'])
-
-                    <div class="card-text" align="left" style="position :relative; width:500px;vertical-align: middle;"><p><img  src="{{$comment['avatar']}}" style= "width: 20px; height: 20px; border-radius: 50%; vertical-align: center;">   <b>{{$comment['user_name']}}</b>  {{$comment['text']}}</p></div>
+                    <!-- The comment will display alongside the username of the commenter as well as their profile picture.-->
+                    <div class="card-text" align="left" style="position :relative; width:270px;vertical-align: middle;"><p><img  src="{{$comment['avatar']}}" style= "width: 20px; height: 20px; border-radius: 50%; vertical-align: center;">   <b>{{$comment['user_name']}}</b>  {{$comment['text']}}</p></div>
             @endif
         @endforeach
 
-        <div align = "center" style="position: relative; width:500px;margin-bottom: 100px">
+        <div align = "center" style="position: relative; width:270px;margin-bottom: 100px">
+            <!-- Every post will have a button to comment. The user can only input text for this.-->
             <form action="/comment" method="POST" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <div><textarea maxlength="300" name="body"  class="form-control" placeholder="Enter your comment here!"></textarea></div>
