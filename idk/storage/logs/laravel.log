@@ -17037,3 +17037,13 @@ Did you mean one of these?
 #53 C:\\Users\\MahHa\\Fakestagram\\idk\\server.php(21): require_once('C:\\\\Users\\\\MahHa\\\\...')
 #54 {main}
 "} 
+[2021-04-04 22:07:57] local.ERROR: There are no commands defined in the "app" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"app\" namespace. at C:\\Users\\MahHa\\Fakestagram\\idk\\vendor\\symfony\\console\\Application.php:605)
+[stacktrace]
+#0 C:\\Users\\MahHa\\Fakestagram\\idk\\vendor\\symfony\\console\\Application.php(656): Symfony\\Component\\Console\\Application->findNamespace('app')
+#1 C:\\Users\\MahHa\\Fakestagram\\idk\\vendor\\symfony\\console\\Application.php(254): Symfony\\Component\\Console\\Application->find('app:name')
+#2 C:\\Users\\MahHa\\Fakestagram\\idk\\vendor\\symfony\\console\\Application.php(166): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\Users\\MahHa\\Fakestagram\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(92): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\Users\\MahHa\\Fakestagram\\idk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 C:\\Users\\MahHa\\Fakestagram\\idk\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
