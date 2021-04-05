@@ -30,11 +30,11 @@
 
                     <div class="row col-9 d-inline-flex pt-2">
                         @if($user->followers->count() > 1 )
-                            <div class="pr-3">{{$user->followers->count()}} <a data-toggle="modal" data-target="#Followers">Followers</a></div>
+                            <div class="pr-2">{{$user->followers->count()}} <a data-toggle="modal" data-target="#Followers">Followers</a></div>
                         @else
-                            <div class="pr-3">{{$user->followers->count()}} <a data-toggle="modal" data-target="#Followers">Follower</a></div>
+                            <div class="pr-2">{{$user->followers->count()}} <a data-toggle="modal" data-target="#Followers">Follower</a></div>
                         @endif
-                        <div class="pr-4">{{$user->following->count()}} <a data-toggle="modal" data-target="#Following">Following</a></div>
+                        <div class="pr-2">{{$user->following->count()}} <a data-toggle="modal" data-target="#Following">Following</a></div>
 
 
                                 <!-- Modal -->
