@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70147f46-dca6-4e30-bbc7-c23169411226" name="Default Changelist" comment="Updating .gitignore, adding restrictions on uploaded images">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/.env" beforeDir="false" />
-    </list>
+    <list default="true" id="70147f46-dca6-4e30-bbc7-c23169411226" name="Default Changelist" comment="Updating .gitignore, adding restrictions on uploaded images" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

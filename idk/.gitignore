@@ -14,3 +14,4 @@ Homestead.yaml
 /.idea/workspace.xml
 npm-debug.log
 yarn-error.log
+laravel.log
