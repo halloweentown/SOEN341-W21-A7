@@ -27,14 +27,16 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
 
+     //Default function when the user logs in or attempts to access the home page.
     public function index()
     {
         /*
         after linking posts to user accounts, use this below $posts = Auth::user()->posts;
         */
-       $posts = Auth::user();
 
-       $online = Post::all()->sortByDesc('created_at');
+        //This function will return an array of posts, comments, and followers.
+        $posts = Auth::user();
+        $online = Post::all()->sortByDesc('created_at');
         $onlinecomment = Comment::all();
         $follow = Following::all();
 
@@ -61,19 +63,18 @@ class HomeController extends Controller
 */
 
 
-
+    //This function is called when a user tries to make a post.
     public function store(Request $request)
     {
         $post = new post();
         $posts = Post::all()->sortByDesc('created_at');
 
-
+        //The different variables of the post are passed to be sent to the database.
         $post->name = Auth::user()->name;
         $post->avatar = Auth::user()->avatar;
         $post->userID = Auth::user()->id;
         $post->caption = $request->input('body');
         $post->image = $request->input('image');
-
 
         if($request->hasfile('image')){
             $file = $request->file('image');
@@ -88,16 +89,18 @@ class HomeController extends Controller
 
         $post->save();
 
-
+        //The user is redirected back to the home page.
         return redirect()->back();
 
 
 
     }
 
+    //This function is called whenever the user tries to comment.
     public function save(Request $request){
         //print_r($request->input());
 
+        //The comment variables are passed to $comment so that it can be sent to the database.
         $post = new post();
         $posts = Post::all()->sortByDesc('created_at');
         $comment = new Comment;
@@ -116,7 +119,8 @@ class HomeController extends Controller
            'comment'=>$comment
        ]);
        */
-
+        
+       //The user is then redirected to the homepage.
         return redirect()->back();
     }
 

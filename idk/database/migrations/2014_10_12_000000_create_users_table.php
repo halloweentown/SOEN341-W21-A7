@@ -11,8 +11,11 @@ class CreateUsersTable extends Migration
      *
      * @return void
      */
+
+     //This function is used to create a table for the users. It is called by running a migration.
     public function up()
     {
+        //The variables assigned to a user can be seen below. Notable variables are the id, name, email, password, and avatar.
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
