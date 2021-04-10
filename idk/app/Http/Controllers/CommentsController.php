@@ -34,6 +34,8 @@ class CommentsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\RedirectResponse
      */
+
+    //This controller is never accessed.
     public function store(Request $request,$post)
     {
         $this->validate($request,[

@@ -11,9 +11,13 @@ class CreateFollowingsTable extends Migration
      *
      * @return void
      */
+
+    //This function creates a table for the followings. It can be called by running a migration.
     public function up()
     {
         Schema::create('followings', function (Blueprint $table) {
+
+            //The variables of a 'followings' include an id, the name of the user being followed, and the name of the user doing the following.
             $table->id();
             $table->unsignedBigInteger('userFollowing');
             $table->unsignedBigInteger('userFollowed');
