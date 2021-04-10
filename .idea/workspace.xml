@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="70147f46-dca6-4e30-bbc7-c23169411226" name="Default Changelist" comment="Updating .gitignore, adding restrictions on uploaded images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idk/app/Http/Controllers/CommentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/app/Http/Controllers/CommentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idk/database/migrations/2021_03_14_031731_create_followers.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +169,7 @@
       <workItem from="1614415413706" duration="16000" />
       <workItem from="1614424010802" duration="328000" />
       <workItem from="1617573707701" duration="3474000" />
-      <workItem from="1617917648007" duration="593000" />
+      <workItem from="1617917648007" duration="2493000" />
     </task>
     <servers />
   </component>
