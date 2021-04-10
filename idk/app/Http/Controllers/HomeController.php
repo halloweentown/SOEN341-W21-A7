@@ -64,7 +64,7 @@ class HomeController extends Controller
 
 
     //This function is called when a user tries to make a post.
-    public function store(Request $request)
+    public function post(Request $request)
     {
         $post = new post();
         $posts = Post::all()->sortByDesc('created_at');
@@ -96,33 +96,7 @@ class HomeController extends Controller
 
     }
 
-    //This function is called whenever the user tries to comment.
-    public function save(Request $request){
-        //print_r($request->input());
 
-        //The comment variables are passed to $comment so that it can be sent to the database.
-        $post = new post();
-        $posts = Post::all()->sortByDesc('created_at');
-        $comment = new Comment;
-        $comments = Comment::all();
-        $comment->text = $request->body;
-        $comment->post_id = $request ->postid;
-        $comment->user_name = Auth::user()->name;
-        $comment->avatar = Auth::user()->avatar;
-        $comment->save();
-
-        /*
-        * return view('home', [
-           'post' => $post,
-           'posts'=>$posts,
-           'comments'=>$comments,
-           'comment'=>$comment
-       ]);
-       */
-        
-       //The user is then redirected to the homepage.
-        return redirect()->back();
-    }
 
 
 }

@@ -25,7 +25,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/logout', [\App\Http\Controllers\Auth\LoginController::class, 'logout']);
 
-Route::post('/home', 'App\Http\Controllers\HomeController@store')->name('home');
+Route::post('/home', [App\Http\Controllers\HomeController::class, 'post'])->name('home');
 
 Route::get('/follow/{post}', [App\Http\Controllers\FollowingController::class, 'follow'])->name('user.follow');
 
@@ -43,4 +43,4 @@ Auth::routes();
 
 Route::get('/profile/{user}', [App\Http\Controllers\ProfileController::class, 'index'])->name('profile.page');
 
-Route::post('/comment', 'App\Http\Controllers\HomeController@save');
+Route::post('/comment',[\App\Http\Controllers\CommentsController::class, 'comment']);
