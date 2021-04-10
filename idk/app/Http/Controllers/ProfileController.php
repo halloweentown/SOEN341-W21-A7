@@ -10,10 +10,11 @@ use App\Models\User;
 //ProfileController will be accessed whenever the user tries to access a user's page.
 class ProfileController extends Controller
 {
-    //This function returns 4 variables. posts will return an array of all the posts. followings will return an array of all the followers. user will return the user whose 
+    //This function returns 4 variables. posts will return an array of all the posts. followings will return an array of all the followers. user will return the user whose
     //profile has been selected. avatar will return the profile picture of the user that has been selected.
     public function index($user)
     {
+        //This function will return an array of a user, its avatar, its followers/followings and posts
         $user = User::find($user);
         $avatar = $user->avatar;
         $online = Post::all()->sortByDesc('created_at');
