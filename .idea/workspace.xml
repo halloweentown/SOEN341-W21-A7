@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70147f46-dca6-4e30-bbc7-c23169411226" name="Default Changelist" comment="Updating .gitignore, adding restrictions on uploaded images">
-      <change beforePath="$PROJECT_DIR$/idk/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/idk/storage/logs/laravel.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idk/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idk/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/resources/views/profile.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,6 +155,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mahery\Documents\GitHub\SOEN341-W21-A7" />
+      <recent name="C:\Users\Mahery\Documents\GitHub\SOEN341-W21-A7\idk" />
       <recent name="C:\Users\MahHa\Fakestagram" />
     </key>
   </component>
