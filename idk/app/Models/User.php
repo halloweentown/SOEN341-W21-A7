@@ -44,9 +44,9 @@ class User extends Authenticatable
      * @var array
      */
     //This part of the code is not used in our implementation, was provided by Laravel.
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+    // protected $casts = [
+    //     'email_verified_at' => 'datetime',
+    // ];
 
     //Makes it so that a user can have many posts attributed to them.
     function posts()
