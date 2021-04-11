@@ -43,7 +43,7 @@
     </div>
 
     <div align="center" style="position: relative; margin-top: 100px" >
-        
+
         <!-- This is a foreach loop which will be used to diplay the posts, an array of posts got sent during the route which is how we have access to it.-->
         @foreach($posts as $post)
         <div>
@@ -53,8 +53,8 @@
                         <img src="{{$post['avatar']}}" style= "width: 30px; height: 30px; border-radius: 50%">
                         <a href="{{ route('profile.page', $post->userID) }}"><b>{{$post['name']}}</b></a>
                     </div>
-                    
-                    <!-- This part is for the following button, if you are viewing your post, it doesn't appear, if you are unfollowing you can unfollow, 
+
+                    <!-- This part is for the following button, if you are viewing your post, it doesn't appear, if you are unfollowing you can unfollow,
                     and if you aren't following you can follow.-->
                     <div class="card-title" align="right" style="position :relative;width:270px;">
                         @if(!Auth::user()->isFollowing($post))
@@ -65,7 +65,7 @@
                             <!-- This is if you view a post from someone you aren't following.-->
                                 <a href="{{ route('user.follow', $post->userID) }}" class="btn btn-success">Follow</a>
                             @endif
-                        
+
                         <!-- This is if you are following the person, the button will allow you to unfollow the user.-->
                         @elseif(Auth::user()->isFollowing($post))
                             <a href="{{ route('user.unfollow', $post->userID) }}" class="btn btn-danger">Unfollow</a>
@@ -73,10 +73,10 @@
                         @endif
                     </div>
             </div>
-            <div class="card-img"><img src="/uploads/post/{{$post['image']}}" width="270px" height="480px"></div>
+            <div class="card-img"><img src="/uploads/post/{{$post['image']}}" style="width:270px; height:360px; object-fit: inherit;"></div>
             <div class="card-text" align="left" style="position :relative;width:270px;margin-top: 1%; vertical-align: middle;"> <p><img src="{{$post['avatar']}}" style= "width: 20px; height: 20px; border-radius: 50%">   <b>{{$post['name']}}</b>  {{$post['caption']}}</p></div>
         </div>
-        
+
         <!-- This takes an array of comments attributed to the post so that they can be displayed.-->
         @foreach($comments as $comment)
             @if($post['id']==$comment['post_id'])

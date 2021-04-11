@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70147f46-dca6-4e30-bbc7-c23169411226" name="Default Changelist" comment="Updating .gitignore, adding restrictions on uploaded images">
-      <change afterPath="$PROJECT_DIR$/idk/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/idk/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/idk/storage/logs/laravel.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idk/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idk/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/resources/views/profile.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +175,7 @@
       <workItem from="1614424010802" duration="328000" />
       <workItem from="1617573707701" duration="3474000" />
       <workItem from="1617917648007" duration="4339000" />
-      <workItem from="1618170300157" duration="888000" />
+      <workItem from="1618170300157" duration="1784000" />
     </task>
     <servers />
   </component>
