@@ -1,7 +1,9 @@
 /node_modules
 /public/hot
 /public/storage
+/public/uploads
 /storage/*.key
+/storage/logs
 /vendor
 .env
 .env.backup
@@ -9,5 +11,7 @@
 docker-compose.override.yml
 Homestead.json
 Homestead.yaml
+/.idea/workspace.xml
 npm-debug.log
 yarn-error.log
+laravel.log

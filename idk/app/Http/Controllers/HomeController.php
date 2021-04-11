@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Comment;
+use App\Models\Following;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Post;
-use App\Models\Follow;
 use Auth;
 
 class HomeController extends Controller
@@ -27,21 +27,23 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
 
+     //Default function when the user logs in or attempts to access the home page.
     public function index()
     {
         /*
         after linking posts to user accounts, use this below $posts = Auth::user()->posts;
         */
-       $posts = Auth::user();
 
-       $online = Post::all()->sortByDesc('created_at');
+        //This function will return an array of posts, comments, and followers.
+        $posts = Auth::user();
+        $online = Post::all()->sortByDesc('created_at');
         $onlinecomment = Comment::all();
-        $onlinefollow = Follow::all();
+        $follow = Following::all();
 
         return view('home', [
             'posts' => $online,
             'comments'=>$onlinecomment,
-            'follows'=>$onlinefollow
+            'followings' => $follow,
         ]);
 
 
@@ -61,18 +63,18 @@ class HomeController extends Controller
 */
 
 
-
-    public function store(Request $request)
+    //This function is called when a user tries to make a post.
+    public function post(Request $request)
     {
         $post = new post();
         $posts = Post::all()->sortByDesc('created_at');
 
-
+        //The different variables of the post are passed to be sent to the database.
         $post->name = Auth::user()->name;
         $post->avatar = Auth::user()->avatar;
+        $post->userID = Auth::user()->id;
         $post->caption = $request->input('body');
         $post->image = $request->input('image');
-
 
         if($request->hasfile('image')){
             $file = $request->file('image');
@@ -85,57 +87,16 @@ class HomeController extends Controller
 
         }
 
-        if ($request->input('body') == null){
-            $post->caption = " ";
-        }
-
         $post->save();
 
-
+        //The user is redirected back to the home page.
         return redirect()->back();
 
 
 
     }
 
-    public function save(Request $request){
-        //print_r($request->input());
 
-        $post = new post();
-        $posts = Post::all()->sortByDesc('created_at');
-        $comment = new Comment;
-        $comments = Comment::all();
-        $comment->text = $request->body;
-        $comment->post_id = $request ->postid;
-        $comment->user_name = Auth::user()->name;
-        $comment->avatar = Auth::user()->avatar;
-        $comment->save();
-
-        /*
-        * return view('home', [
-           'post' => $post,
-           'posts'=>$posts,
-           'comments'=>$comments,
-           'comment'=>$comment
-       ]);
-       */
-
-        return redirect()->back();
-    }
-
-    public function follow(Request $request){
-
-        $follow= new Follow;
-        $follows = Follow::all();
-        $follow->beingfollowed = $request -> postname;
-        $follow->following = Auth::user()->name;
-        $follow->save();
-
-        
-        
-        return redirect()->back();
-        
-    }
 
 
 }

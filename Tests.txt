@@ -1,0 +1,95 @@
+//preliminary test cases, refined tests will be added via PR #85
+Test Cases for Fakestagram:
+
+Note: For all necessary test cases, the User that can be used will have the following information:
+User 1:
+Email Address: test@test.com
+		Password: testtest
+User 2:
+Email Address: test2@test.com
+		Password: test2test2
+
+
+1.	Test login with correct user fields
+•	Acting as a User, 
+•	Visit the Login page
+•	Fill in all the input fields with the same details as initialised by the User
+•	Click on the login button
+•	Assert true if it redirects you to the home page
+
+2.	Test login with incorrect user fields
+•	Acting as a User, 
+•	Visit the Login page
+•	Fill in all the input fields with a different password/username as initialised by the User
+•	Click on the login button
+•	Assert true if it redirects you back to the login page with an error
+
+3.	Test registration
+•	Visit the Register page
+•	Fill in the user fields with a valid Email address and Password
+•	Click on the register button
+•	Assert true if it redirects you to the home page
+
+4.	Check if you can follow a user
+•	Acting as a User,
+•	After logging in, visit the homepage
+•	Click on the follow button
+•	Assert true if database updates and now shows you following that user
+
+5.	Test Posting an image with a caption
+•	Acting as a User,
+•	Visit the home page
+•	Click on “upload an Image”
+•	Pick a random sample image to be uploaded
+•	Add a sample string in the caption text box
+•	Click on upload
+•	Assert true if you are redirected to the home page
+•	Assert true if image is uploaded successfully with the caption
+
+6.	Test being able to comment
+•	Acting as a User,
+•	Visit the home page
+•	Click on the text box underneath the posted picture
+•	Input a string of text
+•	Post that comment 
+•	Assert true if the comment is visible after posting
+•	Assert true if Database now shows that comment in it
+
+7.	Test if posted image is visible to another user
+•	Acting as a User,
+•	Visit the home page 
+•	Post a sample Image with/without a caption
+•	Logout
+•	Acting as a different User
+•	Visit the home page
+•	Check if any images as shown on the homepage
+•	Assert true if the sample image is displayed
+
+8.	Test if “Following Users” is updated when you follow a new user
+•	Acting as a User
+•	Visit the home page 
+•	Post an image with/without a caption
+•	Now, acting as a different user,
+•	Visit the home page
+•	Click on the “follow” button next to User name of the person who posted the image
+•	Visit the User Page
+•	Check if the Following tab now displays the name of the first user 
+•	Assert true if name is found
+
+9.	Test if User Pages displays all images posted by the user 
+•	Acting as a user,
+•	Visit the home page
+•	Post 3 sample images, with/without a caption
+•	Visit the User page
+•	 Assert true if all 3 images are displayed 
+
+10.	Test if “Follow” button updates to “Following” If clicked on
+•	Acting as a User,
+•	Visit the home page
+•	Click on the “Follow” button next to User name of the person who posted the image
+•	Check if it updates to “Following”
+•	Assert true if it does
+
+
+
+	

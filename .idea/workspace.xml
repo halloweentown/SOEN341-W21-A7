@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70147f46-dca6-4e30-bbc7-c23169411226" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/bootstrap/cache/packages.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/bootstrap/cache/packages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/bootstrap/cache/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/bootstrap/cache/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/idk/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/idk/composer.lock" afterDir="false" />
+    <list default="true" id="70147f46-dca6-4e30-bbc7-c23169411226" name="Default Changelist" comment="Updating .gitignore, adding restrictions on uploaded images">
+      <change beforePath="$PROJECT_DIR$/idk/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idk/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/idk/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +15,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="backend-MahHairy-Profile" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -142,7 +144,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-laravel-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -150,6 +152,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MahHa\Fakestagram" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -165,6 +172,8 @@
       <workItem from="1614362028962" duration="2988000" />
       <workItem from="1614415413706" duration="16000" />
       <workItem from="1614424010802" duration="328000" />
+      <workItem from="1617573707701" duration="3474000" />
+      <workItem from="1617917648007" duration="4339000" />
     </task>
     <servers />
   </component>
@@ -172,6 +181,15 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
