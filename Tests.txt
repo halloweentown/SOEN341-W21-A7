@@ -1,3 +1,4 @@
+//preliminary test cases, refined tests will be added via PR #85
 Test Cases for Fakestagram:
 
 Note: For all necessary test cases, the User that can be used will have the following information:
