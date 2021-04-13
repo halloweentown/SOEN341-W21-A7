@@ -97,7 +97,7 @@
                 <div class="d-inline-flex">
 
                     @if($post->userID === $user->id)
-                        <div class="col-4"><img src="/uploads/post/{{$post['image']}}" height="480px"></div>
+                        <div class="col-4"><img src="/uploads/post/{{$post['image']}}" style="width:270px; height:360px; object-fit: inherit;"></div>
                     @endif
                 </div>
 
