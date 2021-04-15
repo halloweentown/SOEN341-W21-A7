@@ -73,12 +73,12 @@ Email Address: test2@test.com
 •	Check if the Followers tab now displays 1 follower
 •	Assert true if update is seen
 
-8.	Test if the User's Profile page displays all images posted by that user 
+8.	Test if the User's Profile page exists
 •	Acting as User 1
 •	Visit the home page
-•	Post 3 sample images, with/without a caption
-•	Visit the Profile page
-•	Assert true if all 3 images are displayed, with their respective captions
+•	Post a sample images, with/without a caption
+•	Click on User Name over the posted image
+•	Assert true if you are redirected to your User Page
 
 9.	Test if “Follow” button updates to “Unfollow” If clicked on
 •	Once a post from User 1 exists

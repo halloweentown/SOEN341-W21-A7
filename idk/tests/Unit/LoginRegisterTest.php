@@ -12,7 +12,7 @@ use App\Models\User;
 
 class LoginRegisterTest extends TestCase
 {
-    //use RefreshDatabase;
+    use RefreshDatabase;
     use DatabaseMigrations;
 
     /**
@@ -24,7 +24,7 @@ class LoginRegisterTest extends TestCase
     public function test_1()
     {
         $this->visit('/register')
-            ->type('User 1', 'name')
+            ->type('User 1', 'name')  //Input the required information to reate user
             ->type('test1@test.com', 'email')
             ->type('testtest', 'password')
             ->type('testtest', 'password_confirmation')
@@ -35,9 +35,10 @@ class LoginRegisterTest extends TestCase
 
     public function test_2()
     {
-        $this->visit('/login')
-            ->type('test@test.com', 'email')
-            ->type('hellohello', 'password')
+        $user1 = User::factory()->create(['email'=>'test@test.com','password'=>'testtest']);
+        $this->visit('/login')  
+            ->type($user1->email, 'email')  //Input credentials
+            ->type($user1->password, 'password')
             ->press('Login')
             ->seePageIs('/login');
     }

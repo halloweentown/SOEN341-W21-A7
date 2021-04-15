@@ -3,18 +3,17 @@
 namespace Tests\Unit;
 
 use Tests\TestCase;
+use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\WithoutMiddleware;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\Models\User;
-use Illuminate\Filesystem\Filesystem;
-use FILE;
 
 class ImagePostTest extends TestCase
 {
-    //use RefreshDatabase;
+    use RefreshDatabase;
     use DatabaseMigrations;
 
     /**
@@ -26,15 +25,15 @@ class ImagePostTest extends TestCase
     public function test_3()
     {
         $user1 = User::factory()->create();
+        Storage::fake('avatars');
         $this->actingAs($user1)
             ->visit('/home')
-            ->attach('/Users/rohit/Downloads/spiderverse.jpg', 'image')
-            ->type('Testing Upload', 'body')
+            ->attach(UploadedFile::fake()->image('avatar.jpg'), 'image')  //Upload image
+            ->type('Testing Upload', 'body')  //Add caption
             ->press('Upload')
             ->seePageIs('/home')
-            ->see('Testing Upload');
-            //->see('/Users/rohit/Downloads/spiderverse.jpg');
-        //CHECK FOR IMAGE
+            ->see('Testing Upload');  //See if caption is found
+        $this->seeInDatabase('posts',['name'=>$user1->name]);  //see if image is stored
     }
     public function test_4()
     {
@@ -52,17 +51,18 @@ class ImagePostTest extends TestCase
     {
         $user1 = User::factory()->create();
         $user2 = User::factory()->create();
+        Storage::fake('avatars');
         $this->actingAs($user1)
             ->visit('/home')
-            ->attach('/Users/rohit/Downloads/spiderverse.jpg', 'image')
+            ->attach(UploadedFile::fake()->image('avatar.jpg'), 'image')
             ->type('Testing Upload', 'body')
             ->press('Upload')
             ->seePageIs('/home')
             ->see('Testing Upload');
         $this->actingAs($user2)
             ->visit('/home')
-            ->see('Testing Upload');
-            //->see('/Users/rohit/Downloads/spiderverse.jpg');
-        //CHECK FOR IMAGE FROM USER2
+            ->see('Testing Upload'); //Caption Found
+        $this->seeInDatabase('posts',['name'=>$user1->name]);  //Image stored
+        
     }
 }
