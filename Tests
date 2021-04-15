@@ -64,14 +64,14 @@ Email Address: test2@test.com
 •	Check User 1's post appears on the homepage
 •	Assert true if the post is displayed with the correct sample image and, if applicable, caption
 
-7.	Test if “Following Users” is updated when you follow a new user
+7.	Test if “Followers” is updated when you follow a new user
 •	Once a post from User 1 exists
 •	Acting as User 2
 •	Visit the home page
 •	Click on the “follow” button next to User name of the person who posted the image
-•	Visit the profile page of User 2 
-•	Check if the Following tab now displays User 1 
-•	Assert true if name is found
+•	Visit the profile page of User 1 
+•	Check if the Followers tab now displays 1 follower
+•	Assert true if update is seen
 
 8.	Test if the User's Profile page displays all images posted by that user 
 •	Acting as User 1

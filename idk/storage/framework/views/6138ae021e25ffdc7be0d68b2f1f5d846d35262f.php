@@ -6,7 +6,7 @@
                 <div class="card-header"><?php echo e(__('Register')); ?></div>
 
                 <div class="card-body">
-                    <form method="POST" action="<?php echo e(route('register')); ?>">
+                    <form method="POST" action="<?php echo e(route('register')); ?>" enctype="multipart/form-data">
                         <?php echo csrf_field(); ?>
 
                         <div class="form-group row">
@@ -98,6 +98,14 @@ unset($__errorArgs, $__bag); ?>
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="avatar" class="col-md-4 col-form-label text-md-right"><?php echo e(__('Profile Picture')); ?></label>
+
+                            <div class="col-md-6">
+                                <input id="avatar" type="file"  name="avatar">
                             </div>
                         </div>
 
