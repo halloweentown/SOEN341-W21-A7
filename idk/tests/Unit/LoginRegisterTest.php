@@ -29,7 +29,7 @@ class LoginRegisterTest extends TestCase
             ->type('test1@test.com', 'email')
             ->type('testtest', 'password')
             ->type('testtest', 'password_confirmation')
-            ->attach(UploadedFile::fake()->image('avatar.jpg'), 'image')  //Upload profile photo
+            ->attach(UploadedFile::fake()->image('avatar.jpg'), 'avatar')  //Upload profile photo
             ->press('Register')
             ->seePageIs('/home');
     }
