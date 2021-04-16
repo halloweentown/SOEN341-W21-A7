@@ -2,13 +2,14 @@ language: php
 php:
   - 7.3
   - 7.4
-  - 8.0
+  #- 8.0
 os: linux
 before_script: 
   - cd idk
   - cp .env.example .env
   - composer update --with-all-dependencies
   - composer install --no-interaction
+  - composer require laravel/browser-kit-testing --dev
   - php artisan key:generate
   - php artisan migrate
   #- php artisan serve
