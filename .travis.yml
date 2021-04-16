@@ -9,6 +9,7 @@ before_script:
   - cp .env.example .env
   - composer update --with-all-dependencies
   - composer install --no-interaction
+  - composer require laravel/browser-kit-testing --dev
   - php artisan key:generate
   - php artisan migrate
   #- php artisan serve
