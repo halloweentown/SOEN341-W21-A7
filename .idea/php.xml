@@ -110,6 +110,8 @@
       <path value="$PROJECT_DIR$/idk/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/idk/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/idk/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/idk/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/idk/vendor/laravel/browser-kit-testing" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />
