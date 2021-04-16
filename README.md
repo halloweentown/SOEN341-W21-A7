@@ -35,7 +35,6 @@ Since Social Media has now become a distinct part of our lives, this project inc
 - Javascript
 - PHP
 - MySQL
-- SQL
 
 ### **UI design** (Sprint 1)
 - Mockplus chosen for Wireframe.
