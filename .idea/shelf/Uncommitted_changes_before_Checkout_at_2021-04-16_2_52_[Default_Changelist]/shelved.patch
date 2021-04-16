@@ -1,0 +1,183 @@
+Index: idk/tests/CreatesApplication.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/idk/tests/CreatesApplication.php b/idk/tests/CreatesApplication.php
+new file mode 100644
+--- /dev/null	(date 1618555940654)
++++ b/idk/tests/CreatesApplication.php	(date 1618555940654)
+@@ -0,0 +1,22 @@
++<?php
++
++namespace Tests;
++
++use Illuminate\Contracts\Console\Kernel;
++
++trait CreatesApplication
++{
++    /**
++     * Creates the application.
++     *
++     * @return \Illuminate\Foundation\Application
++     */
++    public function createApplication()
++    {
++        $app = require __DIR__ . '/../bootstrap/app.php';
++
++        $app->make(Kernel::class)->bootstrap();
++
++        return $app;
++    }
++}
+Index: idk/tests/List of Tests.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/idk/tests/List of Tests.txt b/idk/tests/List of Tests.txt
+new file mode 100644
+--- /dev/null	(date 1618555698749)
++++ b/idk/tests/List of Tests.txt	(date 1618555698749)
+@@ -0,0 +1,95 @@
++// Final Test cases to be performed
++Test Cases for Fakestagram:
++
++Note: For all necessary test cases, the User that can be used will have the following information:
++User 1:
++Name: Test User1 
++Email Address: test@test.com
++		Password: testtest
++User 2:
++Name: Test User2
++Email Address: test2@test.com
++		Password: test2test2
++
++
++1.	Test registration
++•	Visit the Register page
++•	Fill in the user fields required with the User 1 information: name, valid Email address and Password
++•	Click on the register button
++•	Assert true if it redirects you to the home page
++•	Assert true if user appears in the database with correct fields
++
++2.	Test login with correct user fields
++•	Acting as User 1
++•	Visit the Login page
++•	Fill in all the input fields with the same credentials as initialised by the User
++•	Click on the login button
++•	Assert true if it redirects you to the home page
++
++3.	Test Posting an image with a caption
++•	Acting as User 1
++•	Visit the home page
++•	Click on “upload an Image”
++•	Pick a random sample image to be uploaded
++•	Add a sample string in the caption text box
++•	Click on upload
++•	Assert true if you are redirected to the home page
++•	Assert true if image is uploaded successfully with the caption
++
++4.	Test that posting a caption without an image selected is prohibited
++•	Acting as a User 1
++•	Visit the home page
++•	Click on “upload an Image”
++•	Add a sample string in the caption text box
++•	Do not select an image
++•	Click on upload
++•	Assert true if you are not able to post without an imaage
++
++5.	Test being able to comment
++•	Acting as User 1
++•	Visit the home page
++•	Click on the text box underneath another existing post
++•	Input a string of text
++•	Post that comment 
++•	Assert true if the comment is visible after posting
++•	Assert true if Database now shows that comment in it
++
++6.	Test if posted image is visible to another user
++•	Acting as User 1
++•	Visit the home page 
++•	Post a sample Image with/without a caption
++•	Logout
++•	Acting as a different User
++•	Visit the home page
++•	Check User 1's post appears on the homepage
++•	Assert true if the post is displayed with the correct sample image and, if applicable, caption
++
++7.	Test if “Followers” is updated when you follow a new user
++•	Once a post from User 1 exists
++•	Acting as User 2
++•	Visit the home page
++•	Click on the “follow” button next to User name of the person who posted the image
++•	Visit the profile page of User 1 
++•	Check if the Followers tab now displays 1 follower
++•	Assert true if update is seen
++
++8.	Test if the User's Profile page exists
++•	Acting as User 1
++•	Visit the home page
++•	Post a sample images, with/without a caption
++•	Click on User Name over the posted image
++•	Assert true if you are redirected to your User Page
++
++9.	Test if “Follow” button updates to “Unfollow” If clicked on
++•	Once a post from User 1 exists
++•	Acting as User 2
++•	Visit the home page
++•	Click on the “Follow” button next to User name of the User who posted the image
++•	Assert true if the button text becomes "Unfollow"
++
++10.	Check if you can follow a user
++•	Once a post from User 1 exists
++•	Acting as User 2
++•	Navigate to a post made by another user
++•	Click on the follow button
++•	Assert true if database updates and now shows you following that User
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"70147f46-dca6-4e30-bbc7-c23169411226\" name=\"Default Changelist\" comment=\"Updating .gitignore, adding restrictions on uploaded images\">\r\n      <change beforePath=\"$PROJECT_DIR$/idk/resources/views/home.blade.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/idk/resources/views/home.blade.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/idk/resources/views/profile.blade.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/idk/resources/views/profile.blade.php\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\" doNotAsk=\"true\">\r\n    <pharConfigPath>$PROJECT_DIR$/idk/composer.json</pharConfigPath>\r\n    <execution />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"backend-MahHairy-Profile\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"PhpWorkspaceProjectConfiguration\">\r\n    <include_path>\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/phar-io/version\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/phpspec/prophecy\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/phpunit/php-code-coverage\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/phpunit/php-file-iterator\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/phpunit/php-invoker\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/phpunit/php-text-template\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/phpunit/php-timer\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/console\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/css-selector\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/deprecation-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/error-handler\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/event-dispatcher\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/fakerphp/faker\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/event-dispatcher-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/finder\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/http-client-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/http-foundation\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/http-kernel\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/mime\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/polyfill-ctype\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/polyfill-iconv\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/polyfill-intl-grapheme\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/polyfill-intl-idn\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/polyfill-intl-normalizer\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/polyfill-mbstring\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/polyfill-php72\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/polyfill-php73\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/polyfill-php80\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/process\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/routing\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/service-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/string\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/translation\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/translation-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/symfony/var-dumper\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/theseer/tokenizer\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/doctrine/inflector\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/doctrine/instantiator\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/doctrine/lexer\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/hamcrest/hamcrest-php\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/fideloper/proxy\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/fruitcake/laravel-cors\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/phpoption/phpoption\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/ralouphie/getallheaders\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/sebastian/cli-parser\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/sebastian/code-unit\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/sebastian/code-unit-reverse-lookup\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/sebastian/comparator\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/sebastian/complexity\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/sebastian/diff\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/sebastian/environment\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/phpunit/phpunit\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/sebastian/exporter\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/sebastian/global-state\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/sebastian/lines-of-code\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/sebastian/object-enumerator\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/sebastian/object-reflector\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/sebastian/recursion-context\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/sebastian/resource-operations\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/sebastian/type\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/sebastian/version\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/webmozart/assert\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/guzzlehttp/guzzle\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/guzzlehttp/promises\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/facade/flare-client-php\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/guzzlehttp/psr7\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/nunomaduro/collision\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/swiftmailer/swiftmailer\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/tijsverkoyen/css-to-inline-styles\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/dragonmantank/cron-expression\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/phpdocumentor/reflection-common\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/phpdocumentor/reflection-docblock\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/phpdocumentor/type-resolver\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/graham-campbell/result-type\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/composer\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/intervention/image\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/psr/container\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/psr/event-dispatcher\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/psr/http-client\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/psr/http-message\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/psr/log\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/psr/simple-cache\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/psy/psysh\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/filp/whoops\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/opis/closure\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/voku/portable-ascii\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/asm89/stack-cors\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/brick/math\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/nikic/php-parser\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/facade/ignition\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/facade/ignition-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/league/commonmark\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/league/flysystem\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/league/mime-type-detection\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/nesbot/carbon\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/ramsey/collection\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/ramsey/uuid\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/vlucas/phpdotenv\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/dnoegel/php-xdg-base-dir\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/egulias/email-validator\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/laravel/framework\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/laravel/sail\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/laravel/tinker\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/laravel/ui\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/mockery/mockery\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/monolog/monolog\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/myclabs/deep-copy\" />\r\n      <path value=\"$PROJECT_DIR$/idk/vendor/phar-io/manifest\" />\r\n    </include_path>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1p0NUYET5nuV2EmZGDl1qJ3maWM\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\r\n    <property name=\"node.js.path.for.package.eslint\" value=\"project\" />\r\n    <property name=\"node.js.path.for.package.tslint\" value=\"project\" />\r\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\r\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\r\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Mahery\\Documents\\GitHub\\SOEN341-W21-A7\" />\r\n      <recent name=\"C:\\Users\\Mahery\\Documents\\GitHub\\SOEN341-W21-A7\\idk\" />\r\n      <recent name=\"C:\\Users\\MahHa\\Fakestagram\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"70147f46-dca6-4e30-bbc7-c23169411226\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1614316063414</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1614316063414</updated>\r\n      <workItem from=\"1614316064532\" duration=\"998000\" />\r\n      <workItem from=\"1614317451462\" duration=\"705000\" />\r\n      <workItem from=\"1614320853807\" duration=\"637000\" />\r\n      <workItem from=\"1614362028962\" duration=\"2988000\" />\r\n      <workItem from=\"1614415413706\" duration=\"16000\" />\r\n      <workItem from=\"1614424010802\" duration=\"328000\" />\r\n      <workItem from=\"1617573707701\" duration=\"3474000\" />\r\n      <workItem from=\"1617917648007\" duration=\"4339000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 8bd887ee9c832b12f6a14e2125eaffe878b033d8)
++++ b/.idea/workspace.xml	(date 1618555636847)
+@@ -1,10 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="70147f46-dca6-4e30-bbc7-c23169411226" name="Default Changelist" comment="Updating .gitignore, adding restrictions on uploaded images">
+-      <change beforePath="$PROJECT_DIR$/idk/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/resources/views/home.blade.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/idk/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/resources/views/profile.blade.php" afterDir="false" />
+-    </list>
++    <list default="true" id="70147f46-dca6-4e30-bbc7-c23169411226" name="Default Changelist" comment="Updating .gitignore, adding restrictions on uploaded images" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+Index: idk/tests/TestCase.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/idk/tests/TestCase.php b/idk/tests/TestCase.php
+new file mode 100644
+--- /dev/null	(date 1618537959000)
++++ b/idk/tests/TestCase.php	(date 1618537959000)
+@@ -0,0 +1,14 @@
++<?php
++
++namespace Tests;
++
++use Laravel\BrowserKitTesting\TestCase as BaseTestCase;
++
++abstract class TestCase extends BaseTestCase
++{
++    use CreatesApplication;
++
++    public $baseUrl = 'http://localhost';
++
++    // ...
++}

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70147f46-dca6-4e30-bbc7-c23169411226" name="Default Changelist" comment="Updating .gitignore, adding restrictions on uploaded images">
-      <change beforePath="$PROJECT_DIR$/idk/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idk/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/resources/views/profile.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/idk/tests/List of Tests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idk/tests/CreatesApplication.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/tests/CreatesApplication.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idk/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/idk/tests/TestCase.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="backend-MahHairy-Profile" />
+        <entry key="$PROJECT_DIR$" value="backend-MahHairy-Profile-2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
